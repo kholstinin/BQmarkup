@@ -1,0 +1,89 @@
+header {
+  height: 680px;
+  width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  padding: 27px 100px 0 100px;
+  background: url('../img/header.png') no-repeat;
+  color: #fff;
+}
+
+.header__head_wrapper {
+  height: 30px;
+  line-height: 30px;
+}
+
+.header__logo {
+  float: left;
+  height: 30px;
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+
+.header__city {
+  float: left;
+  margin: 0 20px;
+}
+
+.header__phone {
+  float: left;
+}
+
+.header__download {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header__login {
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid #fff;
+  cursor: pointer;
+}
+
+.header__article {
+  margin-top: 110px;
+  width: 350px;
+  height: 183px;
+  font-family: "Geometria";
+
+  h1 {
+    line-height: 65px;
+  }
+}
+
+.header__comments {
+  width: 390px;
+  height: 50px;
+  margin-top: 135px;
+}
+
+.header__btn {
+  margin-top: 45px;
+}
+
+.header__bottom_icon {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  padding-left: 18px; //todo refactor this
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

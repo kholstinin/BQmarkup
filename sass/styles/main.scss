@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+button:active,
+button:focus {
+  outline:0;
+  border:none;
+  -moz-outline-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", serif;
+  font-size: $base-font-size;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('../fonts/HelveticaNeue.otf');
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url('../fonts/Geometria.otf');
+}

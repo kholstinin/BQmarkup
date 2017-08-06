@@ -1,0 +1,76 @@
+.section_five {
+  width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid $border-color;
+  padding: 90px 100px 61px 100px;
+}
+
+.section_five__feedbacks-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.feedback {
+  width: 320px;
+}
+
+.feedback__author-wrapper {
+  margin-top: 30px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.feedback__avatar {
+  float: left;
+}
+
+.feedback__author {
+  float: left;
+  margin-left: 15px;
+  color: $text-gray;
+}
+
+.feedback_card {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  h3 {
+    line-height: 29px;
+  }
+}
+
+.feedback_card__half {
+  width: 50%;
+  padding: 40px 0 40px 40px;
+}
+
+.feedback_card__header {
+  color: $text-accent;
+}
+
+.feedback_card__input {
+  width: 220px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #f1f1f1;
+  float: left;
+}
+
+.feedback_card__btn {
+  width: 220px;
+  float: left;
+}
+
+.feedback_card__input-wrapper {
+  margin-top: 56px;
+}

@@ -1,0 +1,32 @@
+.section_two {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid $border-color;
+  padding: 90px 100px 96px 100px;
+}
+
+.section_two__header {
+  margin-bottom: 75px;
+}
+
+.section_two__cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card_img {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.card_img__header {
+  font-weight: bold;
+  margin: 44px 0 35px 0;
+}
+
+.card_img__text{
+  color: $text-gray;
+}

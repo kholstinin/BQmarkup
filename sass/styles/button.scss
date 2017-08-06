@@ -1,0 +1,30 @@
+.btn {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: $base-color-btn;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+
+  padding: 0;
+  bottom: 0;
+  border-style: none;
+}
+
+.btn__large {
+  width: 240px;
+}
+
+.btn__small {
+  width: 200px;
+}
+
+.btn__accent {
+  background-color: $accent-color-btn;
+}
+
+

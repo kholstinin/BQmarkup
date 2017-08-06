@@ -1,0 +1,26 @@
+footer {
+  height: 304px;
+  width: 1280px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 58px 100px 0 100px;
+  background: #f1f1f1;
+}
+
+.footer__column {
+
+}
+
+.footer__header {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  margin-bottom: 20px;
+  cursor: pointer;
+}

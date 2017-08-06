@@ -1,0 +1,41 @@
+.slider__body {
+  position: relative;
+  border: 1px solid $border-color;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.slider__small {
+  width: 320px;
+  height: 470px;
+}
+
+.slider__large {
+  width: 700px;
+  height: 360px;
+}
+
+.slider__control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.slider__point {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #DCDDDE;
+  margin: 20px 10px 0 0;
+  cursor: pointer;
+
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.slider__point__active {
+  background-color: #ee5133;
+}
+

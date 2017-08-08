@@ -1,8 +1,7 @@
 .section_five {
-  width: 1280px;
+  max-width: 1280px;
   position: relative;
   margin: 0 auto;
-  border-bottom: 1px solid $border-color;
   padding: 90px 100px 61px 100px;
 }
 
@@ -16,6 +15,10 @@
 
 .feedback {
   width: 320px;
+}
+
+.feedback__text {
+  position: relative;
 }
 
 .feedback__author-wrapper {
@@ -34,10 +37,16 @@
   color: $text-gray;
 }
 
+.feedback__quotmark {
+  position: absolute;
+  left: -10px;
+}
+
 .feedback_card {
   width: 100%;
   margin-top: 100px;
   display: flex;
+  height: 270px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
@@ -56,6 +65,10 @@
 
 .feedback_card__header {
   color: $text-accent;
+}
+
+.feedback_card__image {
+  width: 50%;
 }
 
 .feedback_card__input {

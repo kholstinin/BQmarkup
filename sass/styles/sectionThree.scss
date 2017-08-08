@@ -6,12 +6,26 @@
   padding: 78px 100px 78px 100px;
 }
 
+.section_three__header {
+  position: absolute;
+}
+
 .section_three_btn {
-  align-self: flex-end;
+  margin-top: 114px;
+  color: #5d5d5d;
+
+  span {
+    padding-left: 20px;
+  }
+
+  img {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+  }
 }
 
 .card_icon__text {
-  margin-top: 36px;
   margin-bottom: 29px;
   width: 270px;
 }
@@ -26,4 +40,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.card_icon_first {
+  margin-top: 332px;
+}
+
+.card_icon_second {
+  margin-top: 142px;
+}
+
+.card_icon_third {
+  margin-top: 44px;
 }

@@ -20,6 +20,28 @@
   justify-content: space-between;
 }
 
+.section_one__slider_round_img {
+  position: absolute;
+  top: 169px;
+  left: 390px;
+}
+
+.section_one__slider_text {
+  position: absolute;
+  right: 39px;
+  top: 36px;
+  width: 129px;
+
+  h3 {
+    line-height: 29px;
+    text-align: right;
+  }
+}
+
+.section_one__slider_header {
+  color: $text-accent
+}
+
 .section_one__cards_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -28,8 +50,8 @@
 }
 
 .card__header {
-  font-weight: bold;
   margin-bottom: 36px;
+  font-weight: bold;
 }
 
 .card__text {
@@ -51,3 +73,4 @@
   width: 289px;
   margin: 56px 0 86px 60px;
 }
+

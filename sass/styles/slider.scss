@@ -1,18 +1,19 @@
 .slider__body {
   position: relative;
   border: 1px solid $border-color;
-  padding: 20px;
   border-radius: 8px;
 }
 
 .slider__small {
   width: 320px;
   height: 470px;
+  padding: 36px 38px 0 55px;
 }
 
 .slider__large {
   width: 700px;
   height: 360px;
+  padding: 20px;
 }
 
 .slider__control {
@@ -35,7 +36,7 @@
   }
 }
 
-.slider__point__active {
+.slider__point_active {
   background-color: #ee5133;
 }
 

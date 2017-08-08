@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>BQ</title>
+    <title>QB</title>
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
@@ -28,24 +28,32 @@
     </div>
 
     <button class="btn btn__accent btn__small header__btn">Начать</button>
+    <div class="header__more_text">Узнать больше</div>
     <div class="header__bottom_icon"><img src="img/arrow_down.png"/></div>
 </header>
 
 <section class="section_one">
-    <div class="section_one__header"><h2>Зачем нужен QB</h2></div>
+    <h2 class="section__header section_one__header">Зачем нужен QB</h2>
 
     <div class="section_one__card_and_slider_wrapper">
         <div class="card section_one__card section_one__card_one">
-            <div class="card__header"><h3>В квартире может быть<br/> больше свободного места</h3></div>
+            <h3 class="card__header">В квартире может быть<br/> больше свободного места</h3>
             <div class="card__text">Помогаем использовать пространство эффективно — храним вещи, которыми вы
                 не пользуетесь.
             </div>
         </div>
 
         <div class="slider section_one__slider">
-            <div class="slider__body slider__large"></div>
+            <div class="slider__body slider__large">
+                <img src="img/slider.png">
+                <img class="section_one__slider_round_img" src="img/slider_roung.png">
+                <div class="section_one__slider_text">
+                    <h3 class="section_one__slider_header">Ваш ребенок вырос?</h3>
+                    <h3>Освободите детскую от игрушек</h3>
+                </div>
+            </div>
             <div class="slider__control">
-                <div class="slider__point slider__point__active"></div>
+                <div class="slider__point slider__point_active"></div>
                 <div class="slider__point"></div>
                 <div class="slider__point"></div>
             </div>
@@ -54,14 +62,14 @@
 
     <div class="section_one__cards_wrapper">
         <div class="card section_one__card section_one__card_two">
-            <div class="card__header"><h3>Дешевле аренды склада<br/> или гаража</h3></div>
+            <h3 class="card__header">Дешевле аренды склада<br/> или гаража</h3>
             <div class="card__text">В QB вы платите только за бокс с вещами или спортинвентарь, который
                 лежит у нас на складе. Никаких плат за квадратные метры или модули.
             </div>
         </div>
 
         <div class="card section_one__card section_one__card_three">
-            <div class="card__header"><h3>Не нужно тратить ваше</br> время</h3></div>
+            <h3 class="card__header">Не нужно тратить ваше</br> время</h3>
             <div class="card__text">Мы привезем специальные боксы и подождем, пока вы упакуете в них вещи,
                 сфотографируем и увезём на склад.
                 Вернем, когда они вам понадобятся.
@@ -71,11 +79,11 @@
 </section>
 
 <section class="section_two">
-    <div class="section_two__header"><h2>Ваш личный склад с доставкой</h2></div>
+    <h2 class="section__header section_two__header">Ваш личный склад с доставкой</h2>
     <div class="section_two__cards_wrapper">
         <div class="card_img">
             <img src="img/take.png"/>
-            <div class="card_img__header">Забираем</div>
+            <div class="card_img__header"><h3>Забираем</h3></div>
             <div class="card_img__text">Привезем боксы для хранения в запланированное время.
                 Вы упакуете, мы сами доставим их на склад.
             </div>
@@ -83,7 +91,7 @@
 
         <div class="card_img">
             <img src="img/save.png"/>
-            <div class="card_img__header">Храним</div>
+            <div class="card_img__header"><h3>Храним</h3></div>
             <div class="card_img__text">Боксы находятся на чистом и теплом складе
                 столько, сколько нужно.
                 От 150 ₽ за бокс в месяц.
@@ -92,7 +100,7 @@
 
         <div class="card_img">
             <img src="img/return.png"/>
-            <div class="card_img__header">Возращаем</div>
+            <div class="card_img__header"><h3>Возращаем</h3></div>
             <div class="card_img__text">Сами привезем часть или все вещи обратно. Есть срочная доставка в тот же день.
             </div>
         </div>
@@ -100,72 +108,95 @@
 </section>
 
 <section class="section_three">
-    <h2>Удобство<br/> и надежность</h2>
+    <h2 class="section__header section_three__header">Удобство<br/> и надежность</h2>
     <div class="section_three__flex_wrapper">
-        <div class>
-            <div class="card_icon">
-                <img src="img/icon_box.png"/>
-                <div class="card_icon__text">Мы пломбируем каждый бокс, перед тем, как его забрать.</div>
-                <div class="card_icon__text">После этого открыть его сможете только вы.</div>
-            </div>
+        <div class="card_icon card_icon_first">
+            <img src="img/icon_box.png"/>
+            <div class="card_icon__text"><h4>Мы пломбируем каждый бокс, перед тем, как его забрать.</h4></div>
+            <div class="card_icon__text"><h4>После этого открыть его сможете только вы.</h4></div>
         </div>
 
         <div>
             <img src="img/phone.png"/>
         </div>
 
-        <div class="">
+        <div class="card_icon card_icon_second">
             <div class="card_icon__text">
                 <img src="img/icon_tshirt.png"/>
-                <div class="card_icon__text">Фотографии и подписи всех боксов<br/>
+                <div class="card_icon__text"><h4>Фотографии и подписи всех боксов</h4><br/>
                     — у вас в телефоне.
                 </div>
             </div>
 
-            <div class="card_icon">
+            <div class="card_icon card_icon_third">
                 <img src="img/icon_success_box.png"/>
-                <div class="card_icon__text">Вы выбираете боксы для доставки<br/> прямо в приложении.</div>
+                <div class="card_icon__text"><h4>Вы выбираете боксы для доставки<br/> прямо в приложении.</h4></div>
             </div>
 
-            <button class="btn btn__large section_three_btn"><img src="img/apple.png"/>Скачать приложение</button>
+            <button class="btn btn__large section_three_btn"><img src="img/apple.png"/><span>Скачать приложение</span>
+            </button>
         </div>
     </div>
 
 </section>
 
-<!--section class="section_four">
-    <h2>Сколько это стоит</h2>
-    <div class="section_four__comment"><h4>Стоимость рассчитывается исходя из количества боксок и срока храненипя</h4>
+<section class="section_four">
+    <div>
+        <h2 class="section__header">Сколько это стоит</h2>
+        <div class="section_four__comment"><h4>Стоимость рассчитывается исходя из количества боксок и срока
+            храненипя</h4>
+        </div>
+
+        <div class="controls_wrapper">
+            <div class="section_four__control section_four__control_one">
+                <div class="controls_text">Мне нужно</div>
+                <h3>2 бокса</h3>
+                <div class="control">
+                    <div class="control__progress control__progress_first"></div>
+                    <img class="control__progress_icon control__progress_icon_first" src="img/triangle.png">
+                </div>
+                <div class="controls_text">Цена хранения 2 боксов</div>
+                <h3>500 руб. в месяц</h3>
+            </div>
+            <div class="section_four__control">
+                <div class="controls_text">На срок хранения</div>
+                <h3>3 месяца</h3>
+                <div class="control">
+                    <div class="control__progress control__progress_second"></div>
+                    <img class="control__progress_icon control__progress_icon_second" src="img/triangle.png">
+                </div>
+                <div class="controls_text">Цена доставки за 2 бокса</div>
+                <h3>300 руб.</h3>
+            </div>
+        </div>
+
+        <button class="btn btn__large btn__accent">Заказать боксы</button>
     </div>
-
-    <div class="section_four__control_one">
-
-    </div>
-
-    <div class="section_four__control_two">
-
-    </div>
-
-    <button class="btn btn__large btn__accent">Заказать боксы</button>
-
     <div class="section_four__slider slider">
-        <div class="slider__body slider__small"></div>
+        <div class="slider__body slider__small">
+            <div class="section_four__slider_text_wrapper">
+                <h3 class="section_four__slider_header">Что помещается<br/> в 1 бокс?</h3>
+                <h3 class="section_four__slider_text">5 межсезонных пальто<br/> вашей девушки</h3>
+            </div>
+            <img class="section_four__slider_img" src="img/coat.png" />
+        </div>
         <div class="slider__control">
-            <div class="slider__point slider__point__active"></div>
+            <div class="slider__point slider__point_active"></div>
             <div class="slider__point"></div>
             <div class="slider__point"></div>
         </div>
     </div>
-</section-->
+</section>
 
 <section class="section_five">
-    <h2>Нам доверяют</h2>
+    <h2 class="section__header">Нам доверяют</h2>
     <div class="section_five__feedbacks-wrapper">
         <div class="feedback">
             <div class="feedback__text">
-                <h4>Ребенок быстро растет, и все вещи и одежду, из которой он вырос, мы сдали в QB. Все очень удобно.<br/>
+                <span class="feedback__quotmark">«</span><h4>Ребенок быстро растет, и все вещи и одежду, из которой он
+                вырос, мы сдали в QB. Все очень удобно.<br/>
                 Приехали вежливые сотрудники, мы все упаковали, ничего не пришлось поднимать или носить, и теперь у нас
-                    снова много места в детской»</h4>
+                снова много места в детской»</h4>
             </div>
             <div class="feedback__author-wrapper">
                 <div class="feedback__avatar">
@@ -179,10 +210,11 @@
 
         <div class="feedback">
             <div class="feedback__text">
-                <h4>Долго не хотел покупать велосипед, потому что негде было хранить — в подъезде небезопасно, а в квартире
+                <span class="feedback__quotmark">«</span><h4>Долго не хотел покупать велосипед, потому что негде было
+                хранить — в подъезде небезопасно, а в квартире
                 он бы занял весь коридор.<br/>
                 Узнал про QB — за 2 000 рублей можно оставить велосипед на хранение на полгода. Купил, теперь почти как
-                    в Голландии — на работу на велосипеде!»</h4>
+                в Голландии — на работу на велосипеде!»</h4>
             </div>
             <div class="feedback__author-wrapper">
                 <div class="feedback__avatar">
@@ -194,10 +226,11 @@
 
         <div class="feedback">
             <div class="feedback__text">
-                <h4>Девушка недавно переехала ко мне и ей очень не нравился хлам в квартире. Книги, старые пластинки,
+                <span class="feedback__quotmark">«</span><h4>Девушка недавно переехала ко мне и ей очень не нравился
+                хлам в квартире. Книги, старые пластинки,
                 детские игрушки — выкидывать жалко, но кваритру и правда захламляют.<br/>
                 Решил отдать все в QB. Все ненужные вещи заняли всего несколько боксов. Квартира чистая — девушка
-                    довольна!»</h4>
+                довольна!»</h4>
             </div>
             <div class="feedback__author-wrapper">
                 <div class="feedback__avatar">
@@ -217,29 +250,40 @@
                 <button class="btn btn__accent btn__large feedback_card__btn">Далее</button>
             </div>
         </div>
-        <div class="feedback_card__half"><img src="img/boxes.png" /></div>
+        <div class="feedback_card__image"><img src="img/boxes.png"/></div>
     </div>
 
 </section>
 
 <footer class="footer">
-    <div class="footer__column">
+    <div class="footer__column footer__column_left">
         <div class="footer__header">Мобильный склад</div>
         <div class="footer__item">О сервисе</div>
         <div class="footer__item">Правила хранения</div>
         <div class="footer__item">Как хранить бесплатно?</div>
+        <div class="footer__item_logo_block">
+            <div class="footer__logo_wrapper"><img src="img/icon_logo_footer.png"/></div>
+            <h6 class="footer__logo_text">2017 QB. Москва</h6></div>
     </div>
 
-    <div class="footer__column">
+    <div class="footer__column footer__column_center">
         <div class="footer__item">Вопросы и ответы</div>
         <div class="footer__item">Пользовательское соглашение</div>
         <div class="footer__item">Политика конфиденциальности</div>
+        <div class="footer__item footer__item_bottom"><img src="img/apple.png"><span class="footer__item_bottom_text">Скачать приложение</span>
+        </div>
     </div>
 
-    <div class="footer__column">
+    <div class="footer__column footer__column_right">
         <div class="footer__header">Связаться с нами</div>
         <div class="footer__item">+7 (495) 120-2100</div>
         <div class="footer__item">support@qb.com</div>
+        <div class="footer__item footer__item_icon"><img src="img/icon_messenger.png"/><span
+                class="footer__right_column_text">Messenger</span></div>
+        <div class="footer__item footer__item_icon"><img src="img/icon_telegram.png"/><span
+                class="footer__right_column_text">Telegram</span></div>
+        <div class="footer__item footer__item_icon"><img src="img/icon_whatsapp.png"/><span
+                class="footer__right_column_text">WhatsApp</span></div>
     </div>
 </footer>
 

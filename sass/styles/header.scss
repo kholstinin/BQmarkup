@@ -46,24 +46,22 @@ header {
 }
 
 .header__article {
-  margin-top: 110px;
+  margin: 98px 0 0 -4px;
   width: 350px;
   height: 183px;
   font-family: "Geometria";
-
-  h1 {
-    line-height: 65px;
-  }
+  font-weight: bold;
+  line-height: 65px;
 }
 
 .header__comments {
   width: 390px;
   height: 50px;
-  margin-top: 135px;
+  margin-top: 140px;
 }
 
 .header__btn {
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .header__bottom_icon {

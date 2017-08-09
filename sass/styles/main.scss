@@ -33,4 +33,15 @@ body {
 .section__header {
   font-weight: bold;
   line-height: 50px;
+  font-family: "Geometria";
+}
+
+h3 {
+  line-height: 29px;
+}
+
+.section {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
 }

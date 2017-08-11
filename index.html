@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>QB</title>
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
@@ -18,9 +19,7 @@
         <div class="header__download">Скачать приложение</div>
     </div>
 
-
     <h1 class="header__article">Мой мобильный склад</h1>
-
 
     <div class="header__comments">
         <h3>Забираем, храним и возвращаем вещи,
@@ -28,6 +27,10 @@
     </div>
 
     <button class="btn btn__accent btn__small header__btn">Начать</button>
+    <div class="header__mobile-widget">
+        <div class="header__mobile_icon header__download_mobile"><img src="img/mobile_apple.png" /></div>
+        <div class="header__mobile_icon header__call_mobile"><img src="img/mobile_call.png" /></div>
+    </div>
     <div class="header__more_text">Узнать больше</div>
     <div class="header__bottom_icon"><img src="img/arrow_down.png"/></div>
 </header>
@@ -37,7 +40,8 @@
 
     <div class="section_one__card_and_slider_wrapper">
         <div class="card section_one__card section_one__card_one">
-            <h3 class="card__header card__header_card_one">В квартире может быть<br/> больше свободного места</h3>
+            <h3 class="card__header card__header_card_one"><img src="img/plus.png" class="spoiler__switcher"/>В квартире
+                может быть<br/> больше свободного места</h3>
             <div class="card__text">Помогаем использовать пространство эффективно — храним вещи, которыми вы
                 не пользуетесь.
             </div>
@@ -48,7 +52,8 @@
                 <img src="img/slider.png">
                 <img class="section_one__slider_round_img" src="img/slider_roung.png">
                 <div class="section_one__slider_text">
-                    <h3 class="section_one__slider_header">Ваш ребенок вырос?</h3>
+                    <h3 class="section_one__slider_header"><img src="img/plus.png" class="spoiler__switcher"/>Ваш
+                        ребенок вырос?</h3>
                     <h3>Освободите детскую от игрушек</h3>
                 </div>
             </div>
@@ -60,16 +65,18 @@
         </div>
     </div>
 
-    <div class="section section_one__cards_wrapper">
+    <div class="section_one__cards_wrapper">
         <div class="card section_one__card section_one__card_two">
-            <h3 class="card__header card__header_card_two">Дешевле аренды склада<br/> или гаража</h3>
+            <h3 class="card__header card__header_card_two"><img src="img/plus.png" class="spoiler__switcher"/>Дешевле
+                аренды склада<br/> или гаража</h3>
             <div class="card__text">В QB вы платите только за бокс с вещами или спортинвентарь, который
                 лежит у нас на складе. Никаких плат за квадратные метры или модули.
             </div>
         </div>
 
         <div class="card section_one__card section_one__card_three">
-            <h3 class="card__header card__header_card_three">Не нужно тратить ваше</br> время</h3>
+            <h3 class="card__header card__header_card_three"><img src="img/plus.png" class="spoiler__switcher"/>Не нужно
+                тратить ваше</br> время</h3>
             <div class="card__text">Мы привезем специальные боксы и подождем, пока вы упакуете в них вещи,
                 сфотографируем и увезём на склад.
                 Вернем, когда они вам понадобятся.
@@ -105,6 +112,12 @@
             </div>
         </div>
     </div>
+
+    <div class="slider__control_type_card_img  slider__control">
+        <div class="slider__point slider__point_active"></div>
+        <div class="slider__point"></div>
+        <div class="slider__point"></div>
+    </div>
 </section>
 
 <section class="section section_three">
@@ -112,22 +125,21 @@
     <div class="section_three__flex_wrapper">
         <div class="card_icon card_icon_first">
             <img class="card_icon_img" src="img/icon_box.png"/>
-            <div class="card_icon__text"><h4>Мы пломбируем каждый бокс, перед тем, как его забрать.</h4></div>
-            <div class="card_icon__text"><h4>После этого открыть его сможете только вы.</h4></div>
+            <div class="card_text_wrapper_one">
+                <div class="card_icon__text"><h4>Мы пломбируем каждый бокс, перед тем, как его забрать.</h4></div>
+                <div class="card_icon__text"><h4>После этого открыть его сможете только вы.</h4></div>
+            </div>
         </div>
 
-        <div>
+        <div class="section_phone_three">
             <img src="img/phone.png"/>
         </div>
 
         <div>
             <div class="card_icon card_icon_second">
-                <div class="card_icon__text">
-                    <img class="card_icon_img" src="img/icon_tshirt.png"/>
-                    <div class="card_icon__text"><h4>Фотографии и подписи всех боксов<br/>
-                        — у вас в телефоне.</h4>
-                    </div>
-                </div>
+                <img class="card_icon_img" src="img/icon_tshirt.png"/>
+                <div class="card_icon__text"><h4>Фотографии и подписи всех боксов<br/>
+                    — у вас в телефоне.</h4></div>
             </div>
 
             <div class="card_icon card_icon_third">
@@ -140,6 +152,15 @@
             </button>
         </div>
     </div>
+
+    <div class="section_three__phone_wrapper">
+        <img class="section_three__phone_mobile" src="img/mobile_iphone.png" />
+    </div>
+
+    <button class="btn section_three__mobile_btn">
+        <img class="section_three__mobile_btn_icon" src="img/apple_white.png" />
+        Скачать iOS приложение
+    </button>
 
 </section>
 
@@ -158,8 +179,8 @@
                     <div class="control__progress control__progress_first"></div>
                     <img class="control__progress_icon control__progress_icon_first" src="img/triangle.png">
                 </div>
-                <div class="controls_text">Цена хранения 2 боксов</div>
-                <h3>500 руб. в месяц</h3>
+                <div class="controls_text controls_price_info">Цена хранения 2 боксов</div>
+                <h3 class="controls_price_value">500 руб. в месяц</h3>
             </div>
             <div class="section_four__control section_four__control_two">
                 <div class="controls_text">На срок хранения</div>
@@ -168,9 +189,19 @@
                     <div class="control__progress control__progress_second"></div>
                     <img class="control__progress_icon control__progress_icon_second" src="img/triangle.png">
                 </div>
-                <div class="controls_text">Цена доставки за 2 бокса</div>
-                <h3>300 руб.</h3>
+                <div class="controls_text controls_price_info">Цена доставки за 2 бокса</div>
+                <h3 class="controls_price_value">300 руб.</h3>
                 <div class="controls__block_border"></div>
+            </div>
+            <div class="controls_mobile_result">
+                <div class="controls_mobile_result__block controls_mobile_result__block_first">
+                    Цена хранения 2 боксок
+                    <h3>500 руб./месяц</h3>
+                </div>
+                <div class="controls_mobile_result__block controls_mobile_result__block_second">
+                    Цена доставки за 2 бокса
+                    <h3>300 руб.</h3>
+                </div>
             </div>
         </div>
 
@@ -197,7 +228,7 @@
     <div class="section_five__feedbacks-wrapper">
         <div class="feedback">
             <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4>Ребенок быстро растет, и все вещи и одежду, из которой он
+                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Ребенок быстро растет, и все вещи и одежду, из которой он
                 вырос, мы сдали в QB. Все очень удобно.<br/>
                 Приехали вежливые сотрудники, мы все упаковали, ничего не пришлось поднимать или носить, и теперь у нас
                 снова много места в детской»</h4>
@@ -214,7 +245,7 @@
 
         <div class="feedback">
             <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4>Долго не хотел покупать велосипед, потому что негде было
+                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Долго не хотел покупать велосипед, потому что негде было
                 хранить — в подъезде небезопасно, а в квартире
                 он бы занял весь коридор.<br/>
                 Узнал про QB — за 2 000 рублей можно оставить велосипед на хранение на полгода. Купил, теперь почти как
@@ -230,7 +261,7 @@
 
         <div class="feedback">
             <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4>Девушка недавно переехала ко мне и ей очень не нравился
+                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Девушка недавно переехала ко мне и ей очень не нравился
                 хлам в квартире. Книги, старые пластинки,
                 детские игрушки — выкидывать жалко, но кваритру и правда захламляют.<br/>
                 Решил отдать все в QB. Все ненужные вещи заняли всего несколько боксов. Квартира чистая — девушка
@@ -243,6 +274,12 @@
                 <div class="feedback__author">Костя Антонов</div>
             </div>
         </div>
+    </div>
+
+    <div class="slider__control_type_feedback  slider__control">
+        <div class="slider__point slider__point_active"></div>
+        <div class="slider__point"></div>
+        <div class="slider__point"></div>
     </div>
 
     <div class="feedback_card">
@@ -274,7 +311,11 @@
         <div class="footer__item">Вопросы и ответы</div>
         <div class="footer__item">Пользовательское соглашение</div>
         <div class="footer__item">Политика конфиденциальности</div>
-        <div class="footer__item footer__item_bottom"><img src="img/apple.png"><span class="footer__item_bottom_text">Скачать приложение</span>
+        <div class="footer__item footer__item_bottom">
+            <img src="img/apple.png"><span class="footer__item_bottom_text">Скачать приложение</span>
+        </div>
+        <div class="footer__mobile-logo">
+            <h6>2017 QB. Москва</h6>
         </div>
     </div>
 
@@ -289,6 +330,8 @@
         <div class="footer__item footer__item_icon"><img src="img/icon_whatsapp.png"/><span
                 class="footer__right_column_text">WhatsApp</span></div>
     </div>
+
+    <div style="clear: both"></div>
 </footer>
 
 </body>

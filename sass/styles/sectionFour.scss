@@ -106,3 +106,23 @@
   width: 1px;
   background-color: $border-color;
 }
+
+.controls_mobile_result {
+  display: none;
+  flex-direction: row;
+}
+
+.controls_mobile_result__block_first {
+  margin-right: 30px;
+}
+
+.controls_mobile_result__block_second {
+  padding-left: 20px;
+  border-left: 1px solid $border-color;
+}
+
+.controls_mobile_result__block {
+  h3 {
+    margin-top: 16px;
+  }
+}

@@ -11,7 +11,7 @@
 
 .card_icon__text {
   margin-bottom: 20px;
-  width: 290px;
+  max-width: 290px;
 
   h4 {
     line-height: 25px;
@@ -32,6 +32,8 @@
 
 .card_icon_img {
   margin-bottom: 30px;
+  width: 70px;
+  height: 60px;
 }
 
 .card_icon_first {
@@ -61,4 +63,31 @@
     top: 14px;
     left: 22px;
   }
+}
+
+.section_three__phone_wrapper {
+  display: none;
+  border-bottom: 1px solid $border-color;
+}
+
+.section_three__phone_mobile {
+  display: block;
+  width: 192px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.section_three__mobile_btn {
+  display: none;
+  background-color: #5D5D5D;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section_three__mobile_btn_icon {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 16px;
+  height: 19px;
 }

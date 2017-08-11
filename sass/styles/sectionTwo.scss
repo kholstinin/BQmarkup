@@ -15,8 +15,12 @@
 }
 
 .card_img {
-  width: 320px;
+  max-width: 320px;
   margin-bottom: 10px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .card_img__header {
@@ -30,4 +34,8 @@
 .card_img__text{
   color: $text-gray;
   line-height: 25px;
+}
+
+.slider__control_type_card_img {
+  display: none;
 }

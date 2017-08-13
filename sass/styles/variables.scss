@@ -1,6 +1,7 @@
 //== Typography
 
 $base-font-size: 15px;
+$mobile-base-font-size: 14px;
 
 $font-size-h1: 62px;
 $font-size-h2: 40px;
@@ -8,6 +9,13 @@ $font-size-h3: 21px;
 $font-size-h4: 17px;
 $font-size-h5: $base-font-size;
 $font-size-h6: 13px;
+
+$mobile-font-size-h1: 40px;
+$mobile-font-size-h2: 32px;
+$mobile-font-size-h3: 18px;
+$mobile-font-size-h4: 18px;
+$mobile-font-size-h5: $mobile-base-font-size;
+$mobile-font-size-h6: 12px;
 
 //== Colors
 

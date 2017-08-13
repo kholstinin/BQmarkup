@@ -7,7 +7,7 @@
 .slider__small {
   width: 320px;
   height: 470px;
-  padding: 30px 38px 0 55px;
+  padding: 28px 38px 0 55px;
 }
 
 .slider__large {
@@ -21,6 +21,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  padding-top: 20px;
+
+  :last-child {
+    margin-right: 0;
+  }
 }
 
 .slider__point {
@@ -28,12 +33,8 @@
   width: 10px;
   height: 10px;
   background-color: #DCDDDE;
-  margin: 20px 10px 0 0;
+  margin-right: 10px;
   cursor: pointer;
-
-  :last-child {
-    margin-right: 0;
-  }
 }
 
 .slider__point_active {

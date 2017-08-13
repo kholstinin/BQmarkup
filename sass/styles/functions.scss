@@ -1,5 +1,12 @@
 $font-sizes: $font-size-h1, $font-size-h2, $font-size-h3, $font-size-h4, $font-size-h5, $font-size-h6;
+$font-sizes-mobile: $mobile-font-size-h1, $mobile-font-size-h2, $mobile-font-size-h3, $mobile-font-size-h4, $mobile-font-size-h5, $mobile-font-size-h6;
 
 @for $i from 1 through length($font-sizes) {
   h#{$i} { font-size: nth($font-sizes, $i);  margin: 0; font-weight: normal;}
+}
+
+@media (max-width: 500px) {
+  @for $i from 1 through length($font-sizes-mobile) {
+    h#{$i} { font-size: nth($font-sizes-mobile, $i);  margin: 0; font-weight: normal;}
+  }
 }

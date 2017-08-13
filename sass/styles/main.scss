@@ -16,24 +16,38 @@ button:focus {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", serif;
+  font-family: 'Helvetica Neue', serif;
   font-size: $base-font-size;
 }
 
 @font-face {
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
   src: url('../fonts/HelveticaNeue.otf');
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueBold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Geometria';
   src: url('../fonts/Geometria.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/GeometriaBold.otf');
+  font-weight: bold;
 }
 
 .section__header {
-  font-weight: bold;
   line-height: 50px;
-  font-family: "Geometria";
+  font-family: 'Geometria';
+  font-weight: bold;
 }
 
 h3 {

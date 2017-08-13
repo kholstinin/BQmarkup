@@ -1,6 +1,6 @@
 .section_three {
   border-bottom: 1px solid $border-color;
-  padding: 78px 100px 40px 100px;
+  padding: 72px 100px 44px 100px;
 }
 
 .section_three__header {
@@ -10,8 +10,8 @@
 }
 
 .card_icon__text {
-  margin-bottom: 20px;
-  max-width: 290px;
+  max-width: 300px;
+  letter-spacing: 0.3px;
 
   h4 {
     line-height: 25px;
@@ -31,18 +31,20 @@
 }
 
 .card_icon_img {
-  margin-bottom: 30px;
-  width: 70px;
-  height: 60px;
+  margin-bottom: 27px;
 }
 
 .card_icon_first {
-  margin-top: 332px;
+  margin-top: 340px;
+
+  .card_icon__text:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 .card_icon_second {
   text-align: right;
-  margin-top: 142px;
+  margin-top: 150px;
 }
 
 .card_icon_third {
@@ -51,7 +53,7 @@
 }
 
 .section_three_btn {
-  margin: 90px 0 0 50px;
+  margin: 110px 0 0 50px;
   color: #5d5d5d;
 
   span {
@@ -65,7 +67,7 @@
   }
 }
 
-.section_three__phone_wrapper {
+.section_three__phone_wrapper_mobile {
   display: none;
   border-bottom: 1px solid $border-color;
 }
@@ -77,14 +79,14 @@
   margin: 0 auto;
 }
 
-.section_three__mobile_btn {
+.section_three__btn_mobile {
   display: none;
   background-color: #5D5D5D;
   width: 100%;
   margin-top: 20px;
 }
 
-.section_three__mobile_btn_icon {
+.section_three__btn_mobile_icon {
   position: absolute;
   top: 14px;
   left: 24px;

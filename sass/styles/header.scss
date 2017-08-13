@@ -2,15 +2,15 @@ header {
   max-width: 1280px;
   position: relative;
   margin: 0 auto;
-  padding: 27px 100px 44px 100px;
+  padding: 25px 100px 50px 100px;
   background: url('../img/header.png') no-repeat;
   background-position: center;
   color: #fff;
 }
 
-.header__head_wrapper {
-  height: 30px;
-  line-height: 30px;
+.header__head-wrapper {
+  height: 28px;
+  line-height: 28px;
 }
 
 .header__logo {
@@ -23,7 +23,7 @@ header {
 
 .header__city {
   float: left;
-  margin: 0 20px;
+  margin: 0 19px;
 }
 
 .header__phone {
@@ -32,7 +32,7 @@ header {
 
 .header__download {
   float: right;
-  margin-right: 20px;
+  margin-right: 24px;
   cursor: pointer;
 }
 
@@ -46,21 +46,23 @@ header {
 }
 
 .header__article {
-  margin: 98px 0 0 -4px;
+  margin: 102px 0 0 -4px;
   max-width: 350px;
   height: 183px;
   font-family: "Geometria";
   font-weight: bold;
   line-height: 65px;
+  letter-spacing: -0.4px;
 }
 
 .header__comments {
-  max-width: 390px;
-  margin-top: 140px;
+  max-width: 400px;
+  margin-top: 142px;
+  letter-spacing: 0.3px;
 }
 
 .header__btn {
-  margin-top: 50px;
+  margin-top: 42px;
 }
 
 .header__bottom_icon {
@@ -87,14 +89,14 @@ header {
 
 .header__more_text {
   position: absolute;
-  right: 170px;
-  bottom: 69px;
+  right: 173px;
+  bottom: 68px;
 }
 
 .header__mobile-widget {
   display: none;
   float: right;
-  margin-top: 50px;
+  margin-top: 30px;
   height: 50px;
 }
 
@@ -103,7 +105,7 @@ header {
 }
 
 .header__call_mobile {
-  padding: 19px;
+  padding: 18px 18px 11px 18px;
   border-left: 1px solid $border-color;
 
   img {
@@ -113,7 +115,7 @@ header {
 }
 
 .header__download_mobile {
-  padding: 18px;
+  padding: 16px 19px 12px 19px;
 
   img {
     width: 16px;

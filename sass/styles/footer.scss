@@ -2,7 +2,7 @@ footer {
   max-width: 1280px;
   position: relative;
   margin: 0 auto;
-  padding: 54px 100px 42px 100px;
+  padding: 56px 100px 42px 100px;
   background: #f1f1f1;
 }
 
@@ -12,11 +12,12 @@ footer {
 
 .footer__header {
   font-weight: bold;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .footer__item {
   margin-bottom: 18px;
+  line-height: 17px;
 
   img {
     width: 20px;
@@ -26,7 +27,7 @@ footer {
 }
 
 .footer__column_center {
-  margin: 35px 0 0 195px;
+  margin: 36px 0 0 195px;
 }
 
 .footer__column_right {

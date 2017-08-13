@@ -1,9 +1,9 @@
 .section_one {
   border-bottom: 1px solid $border-color;
-  padding: 80px 100px 0 100px;
+  padding: 80px 100px 55px 100px;
 }
 
-.section_one__header {
+.section__header_one {
   position: absolute;
   top: 92px;
   left: 100px;
@@ -18,14 +18,14 @@
 
 .section_one__slider_round_img {
   position: absolute;
-  top: 155px;
-  left: 380px;
+  top: 158px;
+  left: 379px;
 }
 
 .section_one__slider_text {
   position: absolute;
-  right: 39px;
-  top: 28px;
+  right: 41px;
+  top: 30px;
   width: 129px;
 
   h3 {
@@ -44,29 +44,34 @@
   justify-content: flex-end;
 }
 
+.spoiler__switcher {
+  display: none;
+}
+
+.card {
+  letter-spacing: 0.3px;
+}
+
 .card__header {
   font-weight: bold;
   position: relative;
-}
-
-.spoiler__switcher {
-  display: none;
+  letter-spacing: 0.1px;
 }
 
 .card__text {
   color: $text-gray;
   line-height: 23px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .section_one__card_one {
-  max-width: 306px;
+  max-width: 310px;
   align-self: flex-end;
-  margin-bottom: 55px;
+  margin-bottom: 26px;
 }
 
 .card__header_card_one {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .section_one__card_two {
@@ -79,8 +84,8 @@
 }
 
 .section_one__card_three {
-  max-width: 289px;
-  margin: 50px 30px 83px 28px;
+  max-width: 291px;
+  margin: 50px 30px 0 28px;
 }
 
 .card__header_card_three {

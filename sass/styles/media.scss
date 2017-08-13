@@ -1,25 +1,27 @@
 @media (max-width: 500px) {
   // Global
 
+  body {
+    font-size: $mobile-base-font-size;
+  }
+
   .section {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 55px 25px 55px 25px;
   }
 
   header {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 30px 25px 25px 25px;
   }
 
-  h1 {
-    font-size: 50px;
+  .section__header {
+    line-height: 35px;
+  }
+
+  h3 {
+    line-height: 24px;
   }
 
   // Header
-
-  header {
-    background-image: url('../img/mobile_header.png');
-  }
 
   .header__download, .header__phone, .header__more_text, .header__bottom_icon {
     display: none
@@ -33,22 +35,35 @@
     display: block;
   }
 
+  .header__article {
+    max-width: 250px;
+    line-height: 44px;
+    height: auto;
+  }
+
+  .header__comments {
+    margin-top: 75px;
+  }
+
+  .header__btn {
+    margin-top: 30px;
+  }
+
   // Section one
 
   .section_one {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
   }
 
   .section_one__slider {
     display: none;
   }
 
-  .section_one__header {
+  .section__header_one {
     position: relative;
     top: auto;
     left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .section_one__card {
@@ -57,6 +72,7 @@
 
   .card__header {
     margin-left: 20px;
+    margin-bottom: 35px;
   }
 
   .section_one__cards_wrapper {
@@ -79,8 +95,19 @@
   // Section two
 
   .section_two {
-    padding-top: 60px;
     padding-bottom: 20px;
+  }
+
+  .section_two__header {
+    margin-bottom: 50px;
+  }
+
+  .card_img__header {
+    margin: 25px 0;
+  }
+
+  .card_img__text {
+    line-height: 20px;
   }
 
   .section_two__cards_wrapper {
@@ -99,11 +126,6 @@
 
   // Section three
 
-  .section_three {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   .section_three__header {
     position: relative;
     top: auto;
@@ -116,23 +138,41 @@
     margin-bottom: 40px;
   }
 
+  .card_icon__text {
+    h4 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
   .card_icon_img {
-    margin-right: 25px;
+    margin: 0 25px 6px 0;
   }
 
   .card_icon_first {
-    margin-top: 105px;
+    margin-top: 50px;
+
+    .card_icon_img {
+      width: 70px;
+      height: 60px;
+    }
   }
 
-  .card_icon_second {
+  .card_icon_second, .card_icon_third {
     margin-top: 0;
+  }
+
+  .card_icon_third {
+    .card_icon_img {
+      margin-bottom: 15px;
+    }
   }
 
   .section_phone_three, .section_three_btn {
     display: none;
   }
 
-  .section_three__phone_wrapper, .section_three__mobile_btn {
+  .section_three__phone_wrapper_mobile, .section_three__btn_mobile {
     display: block;
   }
 
@@ -144,8 +184,10 @@
 
   .section_four {
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  }
+
+  .section_four__control_one {
+    margin-right: 0;
   }
 
   .section_four__slider {
@@ -214,5 +256,11 @@
 
   .footer__mobile-logo {
     display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__btn {
+    width: 150px;
   }
 }

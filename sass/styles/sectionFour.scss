@@ -17,6 +17,13 @@
   left: 60px;
 }
 
+.section_four__slider_roung-img {
+  display: block;
+  position: absolute;
+  top: 336px;
+  left: 185px;
+}
+
 .section_four__slider_text_wrapper {
   text-align: right;
 }
@@ -36,6 +43,8 @@
 }
 
 .section_four__control {
+  width: 320px;
+
   h3 {
     font-weight: bold;
   }
@@ -73,25 +82,26 @@
 
 .control__progress_icon {
   display: block;
+  cursor: pointer;
   position: absolute;
   top: 10px;
 }
 
 .control__progress_icon_first {
-  left: 20px;
+  left: 22%;
 }
 
 .control__progress_icon_second {
-  left: 70px;
+  left: 52%;
 }
 
 .control__progress_first {
-  width: 30px;
+  width: 25%;
   height: 6px;
 }
 
 .control__progress_second {
-  width: 80px;
+  width: 55%;
   height: 6px;
 }
 

@@ -1,9 +1,10 @@
 header {
-  max-width: 1280px;
+  width: 100%;
+  height: auto;
   position: relative;
-  margin: 0 auto;
   padding: 25px 100px 50px 100px;
   background: url('../img/header.png') no-repeat;
+  background-size: cover;
   background-position: center;
   color: #fff;
 }

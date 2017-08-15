@@ -165,12 +165,40 @@ h3 {
 .slider__point_active {
   background-color: #ee5133; }
 
+.custom_input {
+  display: block;
+  float: left;
+  width: 220px;
+  height: 50px;
+  padding: 20px 0 16px 20px;
+  border: none;
+  background-color: #f1f1f1;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: 'Helvetica Neue', serif;
+  line-height: 50px; }
+
+::-webkit-input-placeholder {
+  color: #a7a9ac; }
+
+::-moz-placeholder {
+  color: #a7a9ac; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #a7a9ac; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #a7a9ac; }
+
 header {
-  max-width: 1280px;
+  width: 100%;
+  height: auto;
   position: relative;
-  margin: 0 auto;
   padding: 25px 100px 50px 100px;
   background: url("../img/header.png") no-repeat;
+  background-size: cover;
   background-position: center;
   color: #fff; }
 
@@ -464,6 +492,12 @@ header {
   top: 220px;
   left: 60px; }
 
+.section_four__slider_roung-img {
+  display: block;
+  position: absolute;
+  top: 336px;
+  left: 185px; }
+
 .section_four__slider_text_wrapper {
   text-align: right; }
 
@@ -477,8 +511,10 @@ header {
   .section_four__comment h4 {
     line-height: 29px; }
 
-.section_four__control h3 {
-  font-weight: bold; }
+.section_four__control {
+  width: 320px; }
+  .section_four__control h3 {
+    font-weight: bold; }
 
 .section_four__control_one {
   margin-right: 60px; }
@@ -507,21 +543,22 @@ header {
 
 .control__progress_icon {
   display: block;
+  cursor: pointer;
   position: absolute;
   top: 10px; }
 
 .control__progress_icon_first {
-  left: 20px; }
+  left: 22%; }
 
 .control__progress_icon_second {
-  left: 70px; }
+  left: 52%; }
 
 .control__progress_first {
-  width: 30px;
+  width: 25%;
   height: 6px; }
 
 .control__progress_second {
-  width: 80px;
+  width: 55%;
   height: 6px; }
 
 .controls_text {
@@ -626,10 +663,11 @@ header {
   margin-top: 56px; }
 
 footer {
-  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin: 0 auto;
-  padding: 56px 100px 42px 100px;
+  padding: 56px 0 42px 0;
   background: #f1f1f1; }
 
 .footer__column {
@@ -821,13 +859,18 @@ footer {
   .controls_mobile_result {
     display: flex; }
   .footer {
-    padding: 35px 25px 20px 25px; }
+    padding: 35px 25px 20px 25px;
+    flex-direction: column; }
   .footer__column_right, .footer__logo_wrapper, .footer__item_logo_block, .footer__item_bottom {
     display: none; }
   .footer__column_center {
     margin: 0; }
   .footer__mobile-logo {
     display: block; } }
+
+@media (max-width: 1260px) {
+  .section_four__control {
+    width: auto; } }
 
 @media (max-width: 360px) {
   .header__btn {

@@ -1,8 +1,9 @@
 footer {
-  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin: 0 auto;
-  padding: 56px 100px 42px 100px;
+  padding: 56px 0 42px 0;
   background: #f1f1f1;
 }
 

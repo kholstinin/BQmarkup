@@ -1,0 +1,31 @@
+.custom_input {
+  display: block;
+  float: left;
+  width: 220px;
+  height: 50px;
+  padding: 20px 0 16px 20px;
+  border: none;
+  background-color: #f1f1f1;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: 'Helvetica Neue', serif;
+  line-height: 50px;
+}
+
+::-webkit-input-placeholder {
+  color: #a7a9ac;
+}
+
+::-moz-placeholder {
+  color: #a7a9ac;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #a7a9ac;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #a7a9ac;
+}

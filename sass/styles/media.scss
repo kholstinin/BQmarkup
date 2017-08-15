@@ -244,6 +244,7 @@
   // Footer
   .footer {
     padding: 35px 25px 20px 25px;
+    flex-direction: column;
   }
 
   .footer__column_right, .footer__logo_wrapper, .footer__item_logo_block, .footer__item_bottom {
@@ -256,6 +257,12 @@
 
   .footer__mobile-logo {
     display: block;
+  }
+}
+
+@media (max-width: 1260px) {
+  .section_four__control {
+    width: auto;
   }
 }
 

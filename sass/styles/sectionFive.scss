@@ -24,8 +24,8 @@
 
 .feedback__author-wrapper {
   margin-top: 24px;
-  height: 50px;
-  line-height: 50px;
+  height: 48px;
+  line-height: 48px;
 }
 
 .feedback__avatar {
@@ -91,4 +91,15 @@
 
 .feedback_card__input-wrapper {
   margin-top: 56px;
+}
+
+
+.feedback_mobile_card {
+  display: none;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.feedback_mobile_card__header {
+  margin-bottom: 36px;
 }

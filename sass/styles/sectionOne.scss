@@ -5,6 +5,7 @@
 
 .section__header_one {
   position: absolute;
+  width: 265px;
   top: 92px;
   left: 100px;
 }
@@ -45,6 +46,11 @@
 }
 
 .spoiler__switcher {
+  position: absolute;
+  left: -36px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
   display: none;
 }
 

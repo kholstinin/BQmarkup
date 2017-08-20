@@ -678,12 +678,38 @@ header {
   margin-top: 56px; }
 
 .feedback_mobile_card {
-  display: none;
+  display: none; }
+
+.feedback_mobile_card-img {
   width: 100%;
-  padding: 40px 0; }
+  color: #fff;
+  padding: 40px 24px;
+  background-image: url("../img/boxes_mobile.png");
+  background-size: cover; }
+
+.feedback_mobile_icons {
+  padding: 28px 24px; }
+
+.custom_input__type_mobile {
+  margin-bottom: 28px; }
 
 .feedback_mobile_card__header {
   margin-bottom: 36px; }
+
+.icons_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px; }
+
+.feedback_mobile_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 32px; }
+
+.feedback_mobile_icon_mail {
+  width: 18px;
+  height: 14px;
+  align-self: center; }
 
 footer {
   width: 100%;

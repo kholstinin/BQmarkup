@@ -5,7 +5,7 @@
 
 .section_three__header {
   position: absolute;
-  top: 145px;
+  top: 147px;
   left: 100px;
 }
 
@@ -31,11 +31,11 @@
 }
 
 .card_icon_img {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .card_icon_first {
-  margin-top: 340px;
+  margin-top: 336px;
 
   .card_icon__text:first-child {
     margin-bottom: 20px;
@@ -45,6 +45,10 @@
 .card_icon_second {
   text-align: right;
   margin-top: 150px;
+
+  .card_icon_img {
+    margin-bottom: 25px;
+  }
 }
 
 .card_icon_third {
@@ -62,10 +66,15 @@
 
   img {
     position: absolute;
-    top: 14px;
-    left: 22px;
+    top: 15px;
+    left: 21px;
   }
 }
+
+.section_phone_three {
+  margin: 0 5px 2px 0;
+}
+
 
 .section_three__phone_wrapper_mobile {
   display: none;

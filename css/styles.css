@@ -109,6 +109,7 @@ h3 {
   position: relative;
   height: 50px;
   line-height: 50px;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #fff;
@@ -313,7 +314,7 @@ header {
 .section__header_one {
   position: absolute;
   width: 265px;
-  top: 92px;
+  top: 94px;
   left: 100px; }
 
 .section_one__card_and_slider_wrapper {
@@ -347,7 +348,7 @@ header {
 .spoiler__switcher {
   position: absolute;
   left: -36px;
-  top: 0px;
+  top: 0;
   width: 24px;
   height: 24px;
   display: none; }
@@ -368,31 +369,28 @@ header {
 .section_one__card_one {
   max-width: 310px;
   align-self: flex-end;
-  margin-bottom: 26px; }
+  margin-bottom: 24px; }
 
 .card__header_card_one {
   margin-bottom: 26px; }
 
 .section_one__card_two {
   max-width: 321px;
-  margin: 50px 30px 0 0; }
+  margin: 51px 30px 0 0; }
 
-.card__header_card_two {
+.card__header_card_two, .card__header_card_three {
   margin-bottom: 25px; }
 
 .section_one__card_three {
   max-width: 291px;
-  margin: 50px 30px 0 28px; }
-
-.card__header_card_three {
-  margin-bottom: 25px; }
+  margin: 51px 30px 0 28px; }
 
 .section_two {
   border-bottom: 1px solid #dcddde;
-  padding: 81px 100px 81px 100px; }
+  padding: 84px 100px 81px 100px; }
 
 .section_two__header {
-  margin-bottom: 69px; }
+  margin-bottom: 66px; }
 
 .section_two__cards_wrapper {
   display: flex;
@@ -424,7 +422,7 @@ header {
 
 .section_three__header {
   position: absolute;
-  top: 145px;
+  top: 147px;
   left: 100px; }
 
 .card_icon__text {
@@ -444,16 +442,18 @@ header {
   justify-content: space-between; }
 
 .card_icon_img {
-  margin-bottom: 27px; }
+  margin-bottom: 29px; }
 
 .card_icon_first {
-  margin-top: 340px; }
+  margin-top: 336px; }
   .card_icon_first .card_icon__text:first-child {
     margin-bottom: 20px; }
 
 .card_icon_second {
   text-align: right;
   margin-top: 150px; }
+  .card_icon_second .card_icon_img {
+    margin-bottom: 25px; }
 
 .card_icon_third {
   text-align: right;
@@ -466,8 +466,11 @@ header {
     padding-left: 20px; }
   .section_three_btn img {
     position: absolute;
-    top: 14px;
-    left: 22px; }
+    top: 15px;
+    left: 21px; }
+
+.section_phone_three {
+  margin: 0 5px 2px 0; }
 
 .section_three__phone_wrapper_mobile {
   display: none;
@@ -498,7 +501,7 @@ header {
   padding: 80px 100px 60px 100px; }
 
 .section__header_four {
-  margin-top: 20px; }
+  margin-top: 23px; }
 
 .section_four__slider_img {
   display: block;
@@ -519,7 +522,7 @@ header {
   color: #ee5133; }
 
 .section_four__comment {
-  margin-top: 18px;
+  margin-top: 15px;
   color: #899398;
   letter-spacing: 0.2px; }
   .section_four__comment h4 {
@@ -537,7 +540,7 @@ header {
   position: relative; }
 
 .controls_wrapper {
-  margin: 49px 0 51px 0;
+  margin: 51px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -546,7 +549,7 @@ header {
   max-width: 320px;
   height: 6px;
   background-color: #e5e6e7;
-  margin: 17px 0 45px 0;
+  margin: 15px 0 45px 0;
   position: relative; }
 
 .control__progress {
@@ -559,7 +562,7 @@ header {
   display: block;
   cursor: pointer;
   position: absolute;
-  top: 10px; }
+  top: 8px; }
 
 .control__progress_icon_first {
   left: 22%; }
@@ -602,14 +605,14 @@ header {
   margin-top: 16px; }
 
 .section_five {
-  padding: 78px 100px 61px 100px; }
+  padding: 83px 100px 61px 100px; }
 
 .section_five__feedbacks-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 64px; }
+  margin-top: 55px; }
 
 .feedback {
   width: 320px; }
@@ -634,6 +637,7 @@ header {
 
 .feedback__quotmark {
   position: absolute;
+  top: 3px;
   left: -10px; }
 
 .feedback__quotmark_mobile {
@@ -644,7 +648,7 @@ header {
 
 .feedback_card {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 79px;
   display: flex;
   height: 270px;
   flex-wrap: wrap;
@@ -655,7 +659,7 @@ header {
 
 .feedback_card__half {
   width: 50%;
-  padding: 38px 0 40px 40px; }
+  padding: 40px 0 40px 40px; }
 
 .feedback_card__header {
   color: #ee5133; }
@@ -675,7 +679,7 @@ header {
   float: left; }
 
 .feedback_card__input-wrapper {
-  margin-top: 56px; }
+  margin: 54px 0 0 1px; }
 
 .feedback_mobile_card {
   display: none; }

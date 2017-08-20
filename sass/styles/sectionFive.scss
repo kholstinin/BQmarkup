@@ -1,5 +1,5 @@
 .section_five {
-  padding: 78px 100px 61px 100px;
+  padding: 83px 100px 61px 100px;
 }
 
 .section_five__feedbacks-wrapper {
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 64px;
+  margin-top: 55px;
 }
 
 .feedback {
@@ -40,6 +40,7 @@
 
 .feedback__quotmark {
   position: absolute;
+  top: 3px;
   left: -10px;
 }
 
@@ -53,7 +54,7 @@
 
 .feedback_card {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 79px;
   display: flex;
   height: 270px;
   flex-wrap: wrap;
@@ -65,7 +66,7 @@
 
 .feedback_card__half {
   width: 50%;
-  padding: 38px 0 40px 40px;
+  padding: 40px 0 40px 40px;
 }
 
 .feedback_card__header {
@@ -90,7 +91,7 @@
 }
 
 .feedback_card__input-wrapper {
-  margin-top: 56px;
+  margin: 54px 0 0 1px;
 }
 
 

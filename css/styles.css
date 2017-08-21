@@ -925,8 +925,10 @@ footer {
   .controls_mobile_result {
     display: flex; }
   .footer {
-    padding: 35px 25px 20px 25px;
-    flex-direction: column; }
+    padding: 35px 25px 20px 25px; }
+  .footer__container {
+    flex-direction: column;
+    padding: 0; }
   .footer__column_right, .footer__logo_wrapper, .footer__item_logo_block, .footer__item_bottom {
     display: none; }
   .footer__column_center {

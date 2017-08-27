@@ -114,6 +114,7 @@ $(document).ready(function () {
     var btns = $(".btn");
     var input = $(".lightbox__input");
     var sendBtn = $(".lightbox__btn");
+    var errorTooltip = $(".error__tooltip");
 
     function showLightbox() {
         lightboxWrapper.show();
@@ -137,23 +138,37 @@ $(document).ready(function () {
         hideLightbox();
     });
 
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
     sendBtn.click(function () {
-        $.ajax({
-            method: "POST",
-            url: "", //http://misc.agileburo.com/rest/email/create
-            data: {
-                "email": input.val(),
-                "name": "my email",
-                "project": "QB"
-            }
-        }).done(function () {
-            input.val("Спасибо!");
-            input.prop('disabled', true);
-            sendBtn.text("Закрыть");
-            sendBtn.click(function () {
-                hideLightbox();
+        if (validateEmail(input.val())) {
+            $.ajax({
+                method: "POST",
+                url: "http://misc.agileburo.com/rest/email/create", //http://misc.agileburo.com/rest/email/create
+                data: {
+                    "email": input.val(),
+                    "name": "my email",
+                    "project": "QB"
+                }
+            }).done(function () {
+                input.val("Спасибо!");
+                input.prop('disabled', true);
+                sendBtn.text("Закрыть");
+                sendBtn.click(function () {
+                    hideLightbox();
+                })
+            });
+        } else {
+            input.css("outline", "1px solid red");
+            errorTooltip.show();
+            input.focus(function() {
+                input.css("outline", "none");
+                errorTooltip.hide();
             })
-        });
+        }
     })
 
 });

@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 55px;
+  margin-top: 61px;
 }
 
 .feedback {
@@ -36,6 +36,7 @@
   float: left;
   margin-left: 15px;
   color: $text-gray;
+  line-height: 52px;
 }
 
 .feedback__quotmark {

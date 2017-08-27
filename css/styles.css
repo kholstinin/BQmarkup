@@ -70,7 +70,8 @@ button:focus {
 body {
   margin: 0;
   font-family: 'Helvetica Neue', serif;
-  font-size: 15px; }
+  font-size: 15px;
+  position: relative; }
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -145,7 +146,7 @@ h3 {
 .slider__small {
   width: 320px;
   height: 470px;
-  padding: 28px 38px 0 55px; }
+  padding: 30px 38px 0 55px; }
 
 .slider__large {
   width: 700px;
@@ -174,7 +175,6 @@ h3 {
 
 .custom_input {
   display: block;
-  float: left;
   width: 220px;
   height: 50px;
   padding: 20px 0 16px 20px;
@@ -203,11 +203,63 @@ h3 {
 :-ms-input-placeholder {
   color: #a7a9ac; }
 
+.lightbox_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  display: none; }
+
+.lightbox {
+  width: 650px;
+  height: 412px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -206px;
+  margin-left: -325px;
+  padding: 44px 0 97px 0;
+  text-align: center;
+  background-color: #fff;
+  z-index: 501;
+  display: none; }
+
+.lightbox__title {
+  font-size: 40px;
+  font-family: "Geometria";
+  color: #333;
+  margin-bottom: 25px; }
+
+.lightbox__article {
+  font-size: 15px;
+  color: #899398;
+  margin-bottom: 25px; }
+
+.lightbox__input {
+  width: 347px;
+  height: 50px;
+  background-color: #f1f1f1;
+  margin: 0 auto 25px auto; }
+
+.lightbox__btn {
+  margin: 0 auto; }
+
+.lightbox__close-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #000;
+  cursor: pointer; }
+
 header {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 25px 100px 50px 100px;
+  padding: 27px 100px 50px 100px;
   background: url("../img/header.png") no-repeat;
   background-size: cover;
   background-position: center;
@@ -219,10 +271,13 @@ header {
 
 .header__logo {
   float: left;
-  height: 30px;
+  height: 29px;
   padding-right: 20px;
   border-right: 1px solid #fff;
   cursor: pointer; }
+  .header__logo img {
+    width: 40px;
+    height: 29px; }
 
 .header__city {
   float: left;
@@ -245,7 +300,7 @@ header {
   cursor: pointer; }
 
 .header__article {
-  margin: 102px 0 0 -4px;
+  margin: 104px 0 0 -4px;
   max-width: 350px;
   height: 183px;
   font-family: "Geometria";
@@ -283,7 +338,7 @@ header {
 .header__more_text {
   position: absolute;
   right: 173px;
-  bottom: 68px; }
+  bottom: 66px; }
 
 .header__mobile-widget {
   display: none;
@@ -448,29 +503,38 @@ header {
   margin-top: 336px; }
   .card_icon_first .card_icon__text:first-child {
     margin-bottom: 20px; }
+  .card_icon_first .card_icon_img {
+    width: 70px;
+    height: 60px; }
 
 .card_icon_second {
   text-align: right;
   margin-top: 150px; }
   .card_icon_second .card_icon_img {
-    margin-bottom: 25px; }
+    width: 70px;
+    height: 70px;
+    margin-bottom: 28px; }
 
 .card_icon_third {
   text-align: right;
-  margin-top: 40px; }
+  margin-top: 37px; }
+  .card_icon_third .card_icon_img {
+    width: 70px;
+    height: 60px; }
 
 .section_three_btn {
   margin: 110px 0 0 50px;
   color: #5d5d5d; }
   .section_three_btn span {
-    padding-left: 20px; }
+    padding-left: 20px;
+    line-height: 52px; }
   .section_three_btn img {
     position: absolute;
     top: 15px;
     left: 21px; }
 
-.section_phone_three {
-  margin: 0 5px 2px 0; }
+.section_three__phone {
+  margin: 2px 5px 2px 3px; }
 
 .section_three__phone_wrapper_mobile {
   display: none;
@@ -506,13 +570,13 @@ header {
 .section_four__slider_img {
   display: block;
   position: absolute;
-  top: 220px;
+  top: 218px;
   left: 60px; }
 
 .section_four__slider_roung-img {
   display: block;
   position: absolute;
-  top: 336px;
+  top: 334px;
   left: 185px; }
 
 .section_four__slider_text_wrapper {
@@ -549,7 +613,7 @@ header {
   max-width: 320px;
   height: 6px;
   background-color: #e5e6e7;
-  margin: 15px 0 45px 0;
+  margin: 15px 0 50px 0;
   position: relative; }
 
 .control__progress {
@@ -559,16 +623,18 @@ header {
   background-color: #ee5133; }
 
 .control__progress_icon {
+  width: 20px;
+  height: 13px;
   display: block;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 8px; }
 
 .control__progress_icon_first {
   left: 22%; }
 
 .control__progress_icon_second {
-  left: 52%; }
+  left: 50%; }
 
 .control__progress_first {
   width: 25%;
@@ -612,7 +678,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 55px; }
+  margin-top: 61px; }
 
 .feedback {
   width: 320px; }
@@ -633,7 +699,8 @@ header {
 .feedback__author {
   float: left;
   margin-left: 15px;
-  color: #899398; }
+  color: #899398;
+  line-height: 52px; }
 
 .feedback__quotmark {
   position: absolute;

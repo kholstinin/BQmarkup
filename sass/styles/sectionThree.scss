@@ -40,6 +40,11 @@
   .card_icon__text:first-child {
     margin-bottom: 20px;
   }
+
+  .card_icon_img {
+    width: 70px;
+    height: 60px;
+  }
 }
 
 .card_icon_second {
@@ -47,13 +52,20 @@
   margin-top: 150px;
 
   .card_icon_img {
-    margin-bottom: 25px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 28px;
   }
 }
 
 .card_icon_third {
   text-align: right;
-  margin-top: 40px;
+  margin-top: 37px;
+
+  .card_icon_img {
+    width: 70px;
+    height: 60px;
+  }
 }
 
 .section_three_btn {
@@ -62,6 +74,7 @@
 
   span {
     padding-left: 20px;
+    line-height: 52px;
   }
 
   img {
@@ -71,8 +84,8 @@
   }
 }
 
-.section_phone_three {
-  margin: 0 5px 2px 0;
+.section_three__phone {
+  margin: 2px 5px 2px 3px;
 }
 
 

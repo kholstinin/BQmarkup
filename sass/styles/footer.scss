@@ -10,9 +10,6 @@ footer {
   padding: 0 100px;
   position: relative;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .footer__column {
@@ -35,8 +32,12 @@ footer {
   }
 }
 
+.footer__column_left {
+  margin-right: 196px;
+}
+
 .footer__column_center {
-  margin: 36px 0 0 0;
+  margin: 36px 165px 0 0;
 }
 
 .footer__column_right {

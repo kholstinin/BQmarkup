@@ -79,10 +79,8 @@
 }
 
 .feedback_card__input {
-  width: 220px;
-  height: 50px;
+  display: none;
   margin-right: 20px;
-  background-color: #f1f1f1;
   float: left;
 }
 
@@ -113,6 +111,7 @@
 }
 
 .custom_input__type_mobile {
+  display: none;
   margin-bottom: 28px;
 }
 

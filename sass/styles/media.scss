@@ -116,6 +116,7 @@
   .section_two__cards_wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
     overflow-x: hidden;
   }
 
@@ -182,7 +183,7 @@
     }
   }
 
-  .section_phone_three, .section_three_btn {
+  .section_three__phone, .section_three_btn {
     display: none;
   }
 
@@ -216,7 +217,7 @@
     flex-direction: column;
   }
 
-  .controls_price_info, .controls_price_value {
+  .controls_price_info_time, .controls_price_info, .controls_price_value {
     display: none;
   }
 

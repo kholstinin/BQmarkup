@@ -112,9 +112,13 @@ $(document).ready(function () {
     var lightbox = $(".lightbox");
     var lightbox_close_btn = $(".lightbox__close-icon");
     var btns = $(".btn");
+    var downloadAppBtn = $('.header__download');
+    var loginBtn = $('.header__login');
+
     var input = $(".lightbox__input");
     var sendBtn = $(".lightbox__btn");
     var errorTooltip = $(".error__tooltip");
+    var doneIcon = $('.lightbox__done_icon');
 
     function showLightbox() {
         lightboxWrapper.show();
@@ -123,12 +127,18 @@ $(document).ready(function () {
 
     function hideLightbox() {
         lightboxWrapper.hide();
+        input.val('');
+        resetValidation();
         lightbox.hide();
+        doneIcon.hide();
     }
 
-    btns.click(function () {
-        showLightbox();
-    });
+    var elemsForClick = [downloadAppBtn, loginBtn, btns];
+    for(var i = 0; i < elemsForClick.length; i++) {
+        elemsForClick[i].click(function () {
+            showLightbox();
+        });
+    }
 
     lightboxWrapper.click(function () {
         hideLightbox();
@@ -141,6 +151,11 @@ $(document).ready(function () {
     function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
+    }
+
+    function resetValidation() {
+        input.css("outline", "none");
+        errorTooltip.hide();
     }
 
     sendBtn.click(function () {
@@ -157,6 +172,7 @@ $(document).ready(function () {
                 input.val("Спасибо!");
                 input.prop('disabled', true);
                 sendBtn.text("Закрыть");
+                doneIcon.show();
                 sendBtn.click(function () {
                     hideLightbox();
                 })
@@ -164,11 +180,35 @@ $(document).ready(function () {
         } else {
             input.css("outline", "1px solid red");
             errorTooltip.show();
-            input.focus(function() {
-                input.css("outline", "none");
-                errorTooltip.hide();
-            })
+            input.focus(resetValidation);
         }
-    })
+    });
+
+    var anchor = $('.section_one');
+    var scrollBtn = $('.header__bottom_icon');
+    scrollBtn.click(function() {
+        $('html, body').animate({
+            scrollTop: anchor.offset().top
+        }, 500);
+    });
+
+
+    var spoilerSwitcher = $('.spoiler__switcher');
+    spoilerSwitcher.click(function() {
+        var elem = $(this);
+        var spoilerText = $(this).parent().parent().find('.card__text');
+
+        if (spoilerText.is(":visible")) {
+            elem.attr('src', 'img/plus.png');
+            spoilerText.hide();
+        } else {
+            elem.attr('src', 'img/minus.png');
+            spoilerText.show();
+        }
+    });
+
+    var mySwiper = new Swiper('.swiper-container', {
+        speed: 400
+    });
 
 });

@@ -11,9 +11,19 @@ $(document).ready(function () {
         count: 15
     };
 
-    var deliveryPriceElem = $(".controls_price_time");
-    var deliveryPriceElemText = $(".controls_price_info_time");
-    var monthPayElem = $(".controls_price_amount");
+    var deliveryPriceElem;
+    var deliveryPriceElemText;
+    var monthPayElem;
+
+    if (md.mobile()) {
+        deliveryPriceElem = $(".controls_mobile_price_time h3");
+        deliveryPriceElemText = $(".controls_mobile_price_info_time");
+        monthPayElem = $(".controls_mobile_price_amount h3");
+    } else {
+        deliveryPriceElem = $(".controls_price_time");
+        deliveryPriceElemText = $(".controls_price_info_time");
+        monthPayElem = $(".controls_price_amount");
+    }
 
     function setInitialPosition(wrapper, type) {
         var sliderIcon = wrapper.find(".control__progress_icon");
@@ -47,11 +57,12 @@ $(document).ready(function () {
         var iconWidth = sliderIcon.width();
         var scalePoint = elemWidth / max;
 
-        sliderIcon.mousedown(function (e) {
+        sliderIcon.on("mousedown touchstart", function (e) {
             var parentCoords = wrapper.offset();
 
-            $(document).bind("mousemove", (function (e) {
-                var newCoord = e.pageX - parentCoords.left - iconWidth / 2;
+            $(document).bind("mousemove touchmove", (function (e) {
+                console.log(e);
+                var newCoord = e.pageX || e.originalEvent.touches[0].pageX - parentCoords.left - iconWidth / 2;
 
                 if (newCoord < scalePoint) {
                     newCoord = scalePoint;
@@ -75,8 +86,8 @@ $(document).ready(function () {
                 updatePrices();
             }));
 
-            $(document).mouseup(function () {
-                $(document).unbind("mousemove");
+            $(document).on("mouseup touchend", function () {
+                $(document).unbind("mousemove touchmove");
             });
 
             return false;
@@ -220,6 +231,9 @@ $(document).ready(function () {
             scrollTop: anchor.offset().top
         }, 500);
     });
+
+
+    // Slider logic
 
     if (md.mobile()) {
         var spoilerSwitcher = $('.spoiler__switcher');

@@ -403,7 +403,7 @@ header {
     height: 18px; }
 
 .header__download_mobile {
-  padding: 16px 19px 12px 19px; }
+  padding: 16px 19px 12px 0; }
   .header__download_mobile img {
     width: 16px;
     height: 19px; }
@@ -703,10 +703,10 @@ header {
   display: none;
   flex-direction: row; }
 
-.controls_mobile_result__block_first {
+.controls_mobile_price_amount {
   margin-right: 30px; }
 
-.controls_mobile_result__block_second {
+.controls_mobile_price_time {
   padding-left: 20px;
   border-left: 1px solid #dcddde; }
 
@@ -1016,6 +1016,8 @@ footer {
     margin-bottom: 0; }
   .section_four {
     flex-direction: column; }
+  .control {
+    max-width: 100%; }
   .section_four__comment_mobile {
     display: block; }
   .section_four__control_one {

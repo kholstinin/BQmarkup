@@ -61,8 +61,8 @@ $(document).ready(function () {
             var parentCoords = wrapper.offset();
 
             $(document).bind("mousemove touchmove", (function (e) {
-                console.log(e);
-                var newCoord = e.pageX || e.originalEvent.touches[0].pageX - parentCoords.left - iconWidth / 2;
+                var pageX = e.pageX || e.originalEvent.touches[0].pageX;
+                var newCoord = pageX - parentCoords.left - iconWidth / 2;
 
                 if (newCoord < scalePoint) {
                     newCoord = scalePoint;

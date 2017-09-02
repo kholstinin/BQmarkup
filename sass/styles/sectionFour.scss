@@ -44,6 +44,7 @@
 
 .section_four__control {
   width: 320px;
+  position: relative;
 
   h3 {
     font-weight: bold;
@@ -52,10 +53,6 @@
 
 .section_four__control_one {
   margin-right: 60px;
-}
-
-.section_four__control_two {
-  position: relative;
 }
 
 .controls_wrapper {
@@ -69,7 +66,7 @@
   max-width: 320px;
   height: 6px;
   background-color: #e5e6e7;
-  margin: 15px 0 50px 0;
+  margin: 15px 0 24px 0;
   position: relative;
 }
 
@@ -104,6 +101,13 @@
 }
 
 
+.section_four__comment_mobile {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 26px;
+  color: $text-accent;
+}
 
 .controls_mobile_result {
   display: none;

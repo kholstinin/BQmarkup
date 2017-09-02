@@ -111,7 +111,7 @@ header {
 }
 
 .header__call_mobile {
-  padding: 18px 18px 11px 18px;
+  padding: 18px 0 11px 18px;
   border-left: 1px solid $border-color;
 
   img {
@@ -121,7 +121,7 @@ header {
 }
 
 .header__download_mobile {
-  padding: 16px 19px 12px 19px;
+  padding: 16px 19px 12px 0;
 
   img {
     width: 16px;

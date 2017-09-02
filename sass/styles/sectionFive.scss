@@ -94,6 +94,7 @@
 }
 
 
+
 .feedback_mobile_card {
   display: none;
 }
@@ -110,12 +111,17 @@
   padding: 28px 24px;
 }
 
+.feedback_mobile_card__text {
+  font-weight: bold;
+}
+
 .custom_input__type_mobile {
   display: none;
   margin-bottom: 28px;
 }
 
 .feedback_mobile_card__header {
+  font-family: 'Helvetica Neue Ligh';
   margin-bottom: 36px;
 }
 

@@ -223,9 +223,17 @@ $(document).ready(function () {
 
     if (md.mobile()) {
         var spoilerSwitcher = $('.spoiler__switcher');
+        var currentOpenedSpoiler = null;
+
         spoilerSwitcher.click(function () {
             var elem = $(this);
-            var spoilerText = $(this).parent().parent().find('.card__text');
+            var spoilerText = elem.parent().parent().find('.card__text');
+
+            if (currentOpenedSpoiler && !currentOpenedSpoiler.is(elem)) {
+                var opened = currentOpenedSpoiler.parent().parent().find('.card__text');
+                currentOpenedSpoiler.attr('src', 'img/plus.png');
+                opened.hide();
+            }
 
             if (spoilerText.is(":visible")) {
                 elem.attr('src', 'img/plus.png');
@@ -234,6 +242,7 @@ $(document).ready(function () {
                 elem.attr('src', 'img/minus.png');
                 spoilerText.show();
             }
+            currentOpenedSpoiler = elem;
         });
 
         function changeDot(number, controls) {

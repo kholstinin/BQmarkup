@@ -35,6 +35,7 @@
   }
 
   .header__login {
+    font-size: 14px;
     border-left: none;
   }
 
@@ -50,9 +51,14 @@
 
   .header__comments {
     margin-top: 75px;
+
+    h3 {
+      font-family: 'Helvetica Neue Light';
+    }
   }
 
   .header__btn {
+    font-weight: normal;
     margin-top: 30px;
   }
 
@@ -113,7 +119,7 @@
   }
 
   .card_img__header {
-    margin: 25px 0;
+    margin: 24px 0;
   }
 
   .card_img__text {
@@ -204,11 +210,15 @@
     flex-direction: column;
   }
 
+  .section_four__comment_mobile {
+    display: block;
+  }
+
   .section_four__control_one {
     margin-right: 0;
   }
 
-  .section_four__slider {
+  .section_four__slider, .section_four__comment {
     display: none;
   }
 
@@ -231,16 +241,18 @@
     padding-bottom: 20px;
   }
 
-  //.feedback {
-  //  float: left;
-  //}
-
   .feedback_mobile_card {
     display: block;
   }
 
   .feedback_card {
     display: none;
+  }
+
+  .feedback__text {
+    h4 {
+      font-family: 'Helvetica Neue Light';
+    }
   }
 
   .feedback__quotmark {
@@ -273,7 +285,7 @@
     display: none;
   }
 
-  .footer__column_center {
+  .footer__column_center, .footer__column_left {
     margin: 0;
   }
 

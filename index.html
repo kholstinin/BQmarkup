@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <title>QB</title>
     <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="scripts/hammerslider.min.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/scripts.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="scripts/hammerslider.required.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -20,11 +23,11 @@
     </div>
     <div class="lightbox__input-wrapper">
         <div class="tooltip error__tooltip">Неверный адрес</div>
-        <input type="email" class="custom_input lightbox__input" />
+        <input type="email" class="custom_input lightbox__input"/>
         <img src="img/done.svg" class="lightbox__done_icon">
     </div>
     <div class="btn btn__type_accent btn__size_large lightbox__btn">Отправить</div>
-    <div class="lightbox__close-icon"><img src="img/cross.svg" /></div>
+    <div class="lightbox__close-icon"><img src="img/cross.svg"/></div>
 </div>
 
 <header>
@@ -103,32 +106,34 @@
 
 <section class="section section_two">
     <h2 class="section__header section_two__header">Ваш личный склад<br/> с доставкой</h2>
-    <div class="section_two__cards_wrapper">
-        <div class="card_img">
-            <img src="img/take.svg"/>
-            <div class="card_img__header"><h3>Забираем</h3></div>
-            <div class="card_img__text">Привезем боксы для хранения в запланированное время.<br/>
-                Вы упакуете, мы сами доставим их на склад.
+    <div class="c-slider" id="cardSlider">
+        <div class="section_two__cards_wrapper c-slider__container">
+            <div class="card_img c-slider__slide">
+                <img src="img/take.svg"/>
+                <div class="card_img__header"><h3>Забираем</h3></div>
+                <div class="card_img__text">Привезем боксы для хранения в запланированное время.<br/>
+                    Вы упакуете, мы сами доставим их на склад.
+                </div>
             </div>
-        </div>
 
-        <div class="card_img">
-            <img src="img/save.svg"/>
-            <div class="card_img__header"><h3>Храним</h3></div>
-            <div class="card_img__text">Боксы находятся на чистом и теплом складе
-                столько, сколько нужно. <br/>
-                От 150 ₽ за бокс в месяц.
+            <div class="card_img c-slider__slide">
+                <img src="img/save.svg"/>
+                <div class="card_img__header"><h3>Храним</h3></div>
+                <div class="card_img__text">Боксы находятся на чистом и теплом складе
+                    столько, сколько нужно. <br/>
+                    От 150 ₽ за бокс в месяц.
+                </div>
             </div>
-        </div>
 
-        <div class="card_img">
-            <img src="img/return.svg"/>
-            <div class="card_img__header"><h3>Возращаем</h3></div>
-            <div class="card_img__text">Сами привезем часть или все вещи обратно. Есть срочная доставка в тот же день.
+            <div class="card_img c-slider__slide">
+                <img src="img/return.svg"/>
+                <div class="card_img__header"><h3>Возращаем</h3></div>
+                <div class="card_img__text">Сами привезем часть или все вещи обратно. Есть срочная доставка в тот же
+                    день.
+                </div>
             </div>
         </div>
     </div>
-
     <div class="slider__control_type_card_img  slider__control">
         <div class="slider__point slider__point_active"></div>
         <div class="slider__point"></div>
@@ -173,7 +178,7 @@
         <img class="section_three__phone_mobile" src="img/mobile_iphone.png"/>
     </div>
 
-    <button class="btn btn_type_mobile section_three__btn_mobile">
+    <button class="btn btn_type_mobile btn_color_gray section_three__btn_mobile">
         <img class="section_three__btn_mobile_icon" src="img/apple_white.png"/>
         Скачать iOS приложение
     </button>
@@ -200,7 +205,7 @@
             </div>
             <div class="section_four__control section_four__control_two">
                 <div class="controls_text">На срок хранения</div>
-                <h3 class="controls_text_value">6 месяцев</h3>
+                <h3 class="controls_text_value">3 месяца</h3>
                 <div class="control control_time">
                     <div class="control__progress control__progress_second"></div>
                     <img class="control__progress_icon control__progress_icon_second" src="img/triangle.svg">
@@ -222,7 +227,7 @@
             </div>
         </div>
 
-        <button class="btn btn__size_large btn__type_accent">Заказать боксы</button>
+        <button class="btn btn__size_large btn__type_accent btn_type_mobile">Заказать боксы</button>
     </div>
     <div class="section_four__slider slider">
         <div class="slider__body slider__small">
@@ -243,56 +248,61 @@
 
 <section class="section section_five">
     <h2 class="section__header">Нам доверяют</h2>
-    <div class="section_five__feedbacks-wrapper">
-        <div class="feedback">
-            <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Ребенок
-                быстро растет, и все вещи и одежду, из которой он
-                вырос, мы сдали в QB. Все очень удобно.<br/>
-                Приехали вежливые сотрудники, мы все упаковали, ничего не пришлось поднимать или носить, и теперь у нас
-                снова много места в детской»</h4>
-            </div>
-            <div class="feedback__author-wrapper">
-                <div class="feedback__avatar">
-                    <img src="img/feedback_img_1.png"/>
+    <div class="c-slider" id="feedbackSlider">
+        <div class="section_five__feedbacks-wrapper c-slider__container">
+            <div class="feedback c-slider__slide">
+                <div class="feedback__text">
+                    <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Ребенок
+                    быстро растет, и все вещи и одежду, из которой он
+                    вырос, мы сдали в QB. Все очень удобно.<br/>
+                    Приехали вежливые сотрудники, мы все упаковали, ничего не пришлось поднимать или носить, и теперь у
+                    нас
+                    снова много места в детской»</h4>
                 </div>
-                <div class="feedback__author">
-                    Ольга Суренкова
+                <div class="feedback__author-wrapper">
+                    <div class="feedback__avatar">
+                        <img src="img/feedback_img_1.png"/>
+                    </div>
+                    <div class="feedback__author">
+                        Ольга Суренкова
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="feedback">
-            <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Долго не
-                хотел покупать велосипед, потому что негде было
-                хранить — в подъезде небезопасно, а в квартире
-                он бы занял весь коридор.<br/>
-                Узнал про QB — за 2 000 рублей можно оставить велосипед на хранение на полгода. Купил, теперь почти как
-                в Голландии — на работу на велосипеде!»</h4>
-            </div>
-            <div class="feedback__author-wrapper">
-                <div class="feedback__avatar">
-                    <img src="img/feedback_img_2.png"/>
+            <div class="feedback c-slider__slide">
+                <div class="feedback__text">
+                    <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Долго
+                    не
+                    хотел покупать велосипед, потому что негде было
+                    хранить — в подъезде небезопасно, а в квартире
+                    он бы занял весь коридор.<br/>
+                    Узнал про QB — за 2 000 рублей можно оставить велосипед на хранение на полгода. Купил, теперь почти
+                    как
+                    в Голландии — на работу на велосипеде!»</h4>
                 </div>
-                <div class="feedback__author">Сергей Васильев</div>
+                <div class="feedback__author-wrapper">
+                    <div class="feedback__avatar">
+                        <img src="img/feedback_img_2.png"/>
+                    </div>
+                    <div class="feedback__author">Сергей Васильев</div>
+                </div>
             </div>
-        </div>
 
-        <div class="feedback">
-            <div class="feedback__text">
-                <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Девушка
-                недавно переехала ко мне и ей очень не нравился
-                хлам в квартире. Книги, старые пластинки,
-                детские игрушки — выкидывать жалко, но кваритру и правда захламляют.<br/>
-                Решил отдать все в QB. Все ненужные вещи заняли всего несколько боксов. Квартира чистая — девушка
-                довольна!»</h4>
-            </div>
-            <div class="feedback__author-wrapper">
-                <div class="feedback__avatar">
-                    <img src="img/feedback_img_3.png"/>
+            <div class="feedback c-slider__slide">
+                <div class="feedback__text">
+                    <span class="feedback__quotmark">«</span><h4><span class="feedback__quotmark_mobile">«</span>Девушка
+                    недавно переехала ко мне и ей очень не нравился
+                    хлам в квартире. Книги, старые пластинки,
+                    детские игрушки — выкидывать жалко, но кваритру и правда захламляют.<br/>
+                    Решил отдать все в QB. Все ненужные вещи заняли всего несколько боксов. Квартира чистая — девушка
+                    довольна!»</h4>
                 </div>
-                <div class="feedback__author">Костя Антонов</div>
+                <div class="feedback__author-wrapper">
+                    <div class="feedback__avatar">
+                        <img src="img/feedback_img_3.png"/>
+                    </div>
+                    <div class="feedback__author">Костя Антонов</div>
+                </div>
             </div>
         </div>
     </div>

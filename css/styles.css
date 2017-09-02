@@ -64,6 +64,9 @@ button:focus {
   border: none;
   -moz-outline-style: none; }
 
+ul {
+  list-style: none; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -123,10 +126,7 @@ h3 {
   bottom: 0;
   border-style: none; }
 
-.btn_type_mobile {
-  font-size: 14px;
-  width: 100%;
-  font-weight: normal;
+.btn_color_gray {
   background-color: #5D5D5D; }
 
 .btn__size_large {
@@ -596,7 +596,7 @@ header {
 .section_three__btn_mobile_icon {
   position: absolute;
   top: 14px;
-  left: 24px;
+  left: 20px;
   width: 16px;
   height: 19px; }
 
@@ -661,6 +661,7 @@ header {
 
 .control__progress {
   position: absolute;
+  height: 6px;
   left: 0;
   top: 0;
   background-color: #ee5133; }
@@ -672,20 +673,6 @@ header {
   cursor: pointer;
   position: relative;
   top: 8px; }
-
-.control__progress_icon_first {
-  left: 22%; }
-
-.control__progress_icon_second {
-  left: 50%; }
-
-.control__progress_first {
-  width: 25%;
-  height: 6px; }
-
-.control__progress_second {
-  width: 55%;
-  height: 6px; }
 
 .controls_text {
   margin-bottom: 6px; }
@@ -913,6 +900,10 @@ footer {
     line-height: 35px; }
   h3 {
     line-height: 24px; }
+  .btn_type_mobile {
+    font-size: 14px;
+    width: 100%;
+    font-weight: normal; }
   .header__download, .header__phone, .header__more_text, .header__bottom_icon {
     display: none; }
   .header__login {
@@ -942,12 +933,13 @@ footer {
     width: auto; }
   .card__header {
     margin-left: 36px;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
     letter-spacing: -0.6px; }
   .section_one__cards_wrapper {
     justify-content: flex-start; }
   .card__text {
-    display: none; }
+    display: none;
+    margin-left: 36px; }
   .spoiler__switcher {
     display: block; }
   .section_two {
@@ -959,15 +951,12 @@ footer {
   .card_img__header {
     margin: 25px 0; }
   .card_img__text {
-    width: 320px;
     line-height: 20px; }
   .section_two__cards_wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     overflow-x: hidden; }
-  .card_img:not(:first-child) {
-    display: none; }
   .slider__control_type_card_img {
     display: flex; }
   .section_three__header {
@@ -1018,8 +1007,6 @@ footer {
   .section_five {
     padding-top: 60px;
     padding-bottom: 20px; }
-  .section_five__feedbacks-wrapper {
-    margin-top: 55px; }
   .feedback_mobile_card {
     display: block; }
   .feedback_card {
@@ -1028,8 +1015,6 @@ footer {
     display: none; }
   .feedback__quotmark_mobile {
     display: inline; }
-  .feedback:not(:first-child) {
-    display: none; }
   .slider__control_type_feedback {
     display: flex; }
   .controls_mobile_result {

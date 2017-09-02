@@ -1,15 +1,47 @@
 $(document).ready(function () {
-    var count = 2;
-    var time = 6;
+    var md = new MobileDetect(window.navigator.userAgent);
+    var initialCount = 2;
+    var initialTime = 3;
+
+    var count = initialCount;
+    var time = initialTime;
+
+    var maxValue = {
+        time: 12,
+        count: 15
+    };
 
     var deliveryPriceElem = $(".controls_price_time");
     var deliveryPriceElemText = $(".controls_price_info_time");
     var monthPayElem = $(".controls_price_amount");
 
-    function createSlider(wrapper, max, type) {
+    function setInitialPosition(wrapper, type) {
+        var sliderIcon = wrapper.find(".control__progress_icon");
+        var sliderProgress = wrapper.find(".control__progress");
+        var max = maxValue[type];
+
+        var elemWidth = wrapper.width();
+        var offset = sliderIcon.width() / 2;
+        var scalePoint = elemWidth / max;
+
+        var initialValue;
+        if (type === "count") {
+            initialValue = initialCount;
+        } else if (type === "time") {
+            initialValue = initialTime;
+        } else {
+            throw new Error("Такого прогресса не существует");
+        }
+
+        sliderIcon.css("left", scalePoint * initialValue);
+        sliderProgress.css("width", scalePoint * initialValue + offset);
+    }
+
+    function createSlider(wrapper, type) {
         var sliderIcon = wrapper.find(".control__progress_icon");
         var sliderProgress = wrapper.find(".control__progress");
         var titleText = wrapper.find(".controls_text_value");
+        var max = maxValue[type];
 
         var elemWidth = wrapper.width();
         var iconWidth = sliderIcon.width();
@@ -33,10 +65,10 @@ $(document).ready(function () {
                 sliderProgress.css("width", newCoord + iconWidth / 2);
                 sliderIcon.css("left", newCoord);
 
-                if (type === "box") {
+                if (type === "count") {
                     count = Math.round((newCoord / elemWidth * max));
                     titleText.text(count + " бокс" + getEnding(count));
-                } else {
+                } else if (type === "time") {
                     time = Math.round((newCoord / elemWidth * max));
                     titleText.text(time + " месяц" + getEnding(count, "month"));
                 }
@@ -94,20 +126,17 @@ $(document).ready(function () {
     }
 
 
-
     // prices
     var controlAmountWrapper = $(".section_four__control_one");
     var controlTimeWrapper = $(".section_four__control_two");
 
-    createSlider(controlAmountWrapper, 15, "box");
-    createSlider(controlTimeWrapper, 12);
-
+    createSlider(controlAmountWrapper, "count");
+    setInitialPosition(controlAmountWrapper, "count");
+    createSlider(controlTimeWrapper, "time");
+    setInitialPosition(controlTimeWrapper, "time");
 
 
     // lightbox
-
-
-
     var lightboxWrapper = $(".lightbox_overlay");
     var lightbox = $(".lightbox");
     var lightbox_close_btn = $(".lightbox__close-icon");
@@ -134,7 +163,7 @@ $(document).ready(function () {
     }
 
     var elemsForClick = [downloadAppBtn, loginBtn, btns];
-    for(var i = 0; i < elemsForClick.length; i++) {
+    for (var i = 0; i < elemsForClick.length; i++) {
         elemsForClick[i].click(function () {
             showLightbox();
         });
@@ -186,29 +215,48 @@ $(document).ready(function () {
 
     var anchor = $('.section_one');
     var scrollBtn = $('.header__bottom_icon');
-    scrollBtn.click(function() {
+    scrollBtn.click(function () {
         $('html, body').animate({
             scrollTop: anchor.offset().top
         }, 500);
     });
 
+    if (md.mobile()) {
+        var spoilerSwitcher = $('.spoiler__switcher');
+        spoilerSwitcher.click(function () {
+            var elem = $(this);
+            var spoilerText = $(this).parent().parent().find('.card__text');
 
-    var spoilerSwitcher = $('.spoiler__switcher');
-    spoilerSwitcher.click(function() {
-        var elem = $(this);
-        var spoilerText = $(this).parent().parent().find('.card__text');
+            if (spoilerText.is(":visible")) {
+                elem.attr('src', 'img/plus.png');
+                spoilerText.hide();
+            } else {
+                elem.attr('src', 'img/minus.png');
+                spoilerText.show();
+            }
+        });
 
-        if (spoilerText.is(":visible")) {
-            elem.attr('src', 'img/plus.png');
-            spoilerText.hide();
-        } else {
-            elem.attr('src', 'img/minus.png');
-            spoilerText.show();
+        function changeDot(number, controls) {
+            var currentControl = controls.children(".slider__point_active");
+            currentControl.removeClass("slider__point_active");
+            controls.children().eq(number).addClass("slider__point_active");
         }
-    });
 
-    var mySwiper = new Swiper('.swiper-container', {
-        speed: 400
-    });
+        var feedbackSlider = $("#feedbackSlider");
+        var feedbackControls = feedbackSlider.next();
+        var cardSlider = $("#cardSlider");
+        var cardControls = cardSlider.next();
 
+        feedbackSlider.HammerSlider({
+            beforeSlideChange: function (number) {
+                changeDot(number, feedbackControls);
+            }.bind(this)
+        });
+
+        cardSlider.HammerSlider({
+            beforeSlideChange: function (number) {
+                changeDot(number, cardControls);
+            }.bind(this)
+        });
+    }
 });

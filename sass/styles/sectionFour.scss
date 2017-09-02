@@ -75,6 +75,7 @@
 
 .control__progress {
   position: absolute;
+  height: 6px;
   left: 0;
   top: 0;
   background-color: $accent-color-btn;
@@ -87,24 +88,6 @@
   cursor: pointer;
   position: relative;
   top: 8px;
-}
-
-.control__progress_icon_first {
-  left: 22%;
-}
-
-.control__progress_icon_second {
-  left: 50%;
-}
-
-.control__progress_first {
-  width: 25%;
-  height: 6px;
-}
-
-.control__progress_second {
-  width: 55%;
-  height: 6px;
 }
 
 .controls_text {

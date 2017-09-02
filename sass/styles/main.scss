@@ -10,6 +10,10 @@ button:focus {
   -moz-outline-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }

@@ -2,18 +2,39 @@
   position: relative;
   border: 1px solid $border-color;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .slider__small {
   width: 320px;
   height: 470px;
-  padding: 30px 38px 0 55px;
 }
 
 .slider__large {
   width: 700px;
   height: 360px;
+}
+
+.slider__wrapper {
+  width: 2100px;
+  height: 100%;
+  transition: .5s ease-out;
+}
+
+.slider__step {
+  position: relative;
+  float: left;
+}
+
+.slider__step_large {
+  width: 680px;
   padding: 20px;
+}
+
+.slider__step_small {
+  width: 320px;
+  height: 470px;
+  padding: 30px 30px 30px 55px;
 }
 
 .slider__control {

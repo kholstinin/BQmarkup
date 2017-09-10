@@ -233,7 +233,7 @@ $(document).ready(function () {
     });
 
 
-    // Slider logic
+    // Mobile slider logic
 
     if (md.mobile()) {
         var spoilerSwitcher = $('.spoiler__switcher');
@@ -281,5 +281,46 @@ $(document).ready(function () {
                 changeDot(number, cardControls);
             }.bind(this)
         });
+
+        // Desktop slider logic
+    } else {
+        // sectionOneSlider.on("mousedown", function() {
+        //     $(document).bind("mousemove", function (e) {
+        //         sectionOneSliderBody.css("transform", "translate(-px)");
+        //     });
+        //
+        //     $(document).on("mouseup", function() {
+        //         $(document).unbind("mousemove");
+        //     })
+        // });
+
+        function initSlider(sliderElem) {
+            var sliderControl = sliderElem.find(".slider__control");
+            var sliderBody = sliderElem.find(".slider__body");
+            var offset = sliderElem.width();
+            if (sliderBody.hasClass("slider__large")) {
+                offset -= 20;
+            }
+
+            sliderControl.children().click(function () {
+                var elem = $(this);
+                var sliderWrapper = sliderElem.find(".slider__wrapper");
+                var multiplier = 0;
+
+                if (!elem.hasClass("slider__point_active")) {
+                    elem.parent().find(".slider__point_active").removeClass("slider__point_active");
+                    elem.addClass("slider__point_active");
+                    console.log(elem.data());
+                    multiplier = elem.data().count;
+                    sliderWrapper.css("transform", "translate(-" + offset * multiplier + "px)");
+                }
+            });
+        }
+
+        var sectionOneSlider = $(".section_one__slider");
+        var sectionFourSlider = $(".section_four__slider");
+
+        initSlider(sectionOneSlider);
+        initSlider(sectionFourSlider);
     }
 });

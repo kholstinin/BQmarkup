@@ -184,17 +184,25 @@ h3 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding-top: 20px; }
+  align-items: center;
+  height: 50px; }
   .slider__control :last-child {
     margin-right: 0; }
+
+.slider__point_wrapper {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
 
 .slider__point {
   border-radius: 50%;
   width: 10px;
   height: 10px;
   background-color: #DCDDDE;
-  margin-right: 10px;
-  cursor: pointer; }
+  margin-right: 10px; }
 
 .slider__point_active {
   background-color: #ee5133; }
@@ -691,12 +699,17 @@ header {
   background-color: #ee5133; }
 
 .control__progress_icon {
-  width: 20px;
-  height: 13px;
+  width: 40px;
+  height: 30px;
   display: block;
   cursor: pointer;
   position: relative;
   top: 8px; }
+
+.control__icon {
+  display: block;
+  width: 20px;
+  height: 13px; }
 
 .controls_text {
   margin-bottom: 6px; }
@@ -828,7 +841,7 @@ header {
   margin-bottom: 28px; }
 
 .feedback_mobile_card__header {
-  font-family: 'Helvetica Neue Ligh';
+  font-family: 'Helvetica Neue Light';
   margin-bottom: 36px; }
 
 .icons_wrapper {

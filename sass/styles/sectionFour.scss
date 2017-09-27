@@ -79,12 +79,17 @@
 }
 
 .control__progress_icon {
-  width: 20px;
-  height: 13px;
+  width: 40px;
+  height: 30px;
   display: block;
   cursor: pointer;
   position: relative;
   top: 8px;
+}
+.control__icon {
+  display: block;
+  width: 20px;
+  height: 13px;
 }
 
 .controls_text {

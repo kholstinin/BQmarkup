@@ -31,7 +31,7 @@ $(document).ready(function () {
         var max = maxValue[type];
 
         var elemWidth = wrapper.width();
-        var offset = sliderIcon.width() / 2;
+        var offset = sliderIcon.children().width() / 2;
         var scalePoint = elemWidth / max;
 
         var initialValue;
@@ -54,7 +54,7 @@ $(document).ready(function () {
         var max = maxValue[type];
 
         var elemWidth = wrapper.width();
-        var iconWidth = sliderIcon.width();
+        var iconWidth = sliderIcon.children().width();
         var scalePoint = elemWidth / max;
 
         sliderIcon.on("mousedown touchstart", function (e) {
@@ -297,20 +297,19 @@ $(document).ready(function () {
         function initSlider(sliderElem) {
             var sliderControl = sliderElem.find(".slider__control");
             var sliderBody = sliderElem.find(".slider__body");
-            var offset = sliderElem.width();
+            var offset = sliderElem.width() + 100;
             if (sliderBody.hasClass("slider__large")) {
                 offset -= 20;
             }
 
-            sliderControl.children().click(function () {
-                var elem = $(this);
+            sliderControl.find(".slider__point_wrapper").click(function () {
+                var elem = $(this).children();
                 var sliderWrapper = sliderElem.find(".slider__wrapper");
                 var multiplier = 0;
 
                 if (!elem.hasClass("slider__point_active")) {
-                    elem.parent().find(".slider__point_active").removeClass("slider__point_active");
+                    sliderControl.find(".slider__point_active").removeClass("slider__point_active");
                     elem.addClass("slider__point_active");
-                    console.log(elem.data());
                     multiplier = elem.data().count;
                     sliderWrapper.css("transform", "translate(-" + offset * multiplier + "px)");
                 }

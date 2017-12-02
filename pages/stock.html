@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru en">
+<head>
+    <meta charset="UTF-8">
+    <title>stock</title>
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/accountStyles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__content">
+        <div class="header__logo"></div>
+        <div class="header__city">Москва</div>
+        <div class="header__phone_number">+7 (495) 120-2100</div>
+
+        <div class="header__username"><a href="#">Александр</a></div>
+        <div class="header__save_free"><a href="#">Как хранить бесплатно?</a></div>
+        <div class="header__download_app"><a href="#">Скачать приложение</a></div>
+    </div>
+</header>
+
+<div class="lightbox_overlay"></div>
+<div class="lightbox">
+    <div class="lightbox__close_button"></div>
+    <div class="lightbox__image">
+
+    </div>
+    <div class="lightbox__content_wrapper">
+        <div class="lightbox__title">Книги Жанны</div>
+        <div class="lightbox__content">
+            <div class="lightbox__table">
+                <div class="lightbox__table_row">
+                    <div class="lightbox__table_cell lightbox__table_cell_title">
+                        Номер бокса:
+                    </div>
+                    <div class="lightbox__table_cell lightbox__table_cell_value">
+                        А 101 3421
+                    </div>
+                </div>
+
+                <div class="lightbox__table_row">
+                    <div class="lightbox__table_cell lightbox__table_cell_title">
+                        Начало аренды:
+                    </div>
+                    <div class="lightbox__table_cell lightbox__table_cell_value">
+                        А 101 3421
+                    </div>
+                </div>
+            </div>
+
+            <textarea class="lightbox__notes" placeholder="Добавить заметку"></textarea>
+        </div>
+    </div>
+</div>
+
+<main class="section_main stock">
+    <div class="stock__header_wrapper">
+        <div class="stock__header_text_wrapper">
+            <div class="title_text stock__header">
+                Мой склад
+            </div>
+            <div class="stock__header_commentary">На складе хранится 4 бокса</div>
+        </div>
+        <div class="stock__header_buttons_wrapper">
+            <div class="stock__plus_wrapper">
+                <div class="stock__plus"></div>
+            </div>
+            <button type="button" class="btn btn__type_accent stock__btn_plane_delivery">Запланировать доставку</button>
+        </div>
+    </div>
+
+    <div class="cards__wrapper">
+        <div class="stock_card stock_card__active_delivery">
+            <div class="stock_card__title_active"><h3>Активная доставка</h3></div>
+            <div class="stock_card__address">
+                <div class="stock_card__address_title">Команда QB выехала по адресу:</div>
+                <div class="stock_card__address_value">ул. Ивана Бабушкина 32</div>
+            </div>
+            <div class="stock_card__arrival_time">
+                <div class="stock_card__arrival_time_title">Примерное время прибытия:</div>
+                <div class="stock_card__arrival_time_value">10 минут...</div>
+            </div>
+            <div class="stock_card__user">
+                <div class="stock_card__user_info">
+                    <div class="stock_card__user_name">Алексей</div>
+                    <div class="stock_card__phone_number">+7 (915) 085-8580</div>
+                </div>
+                <div class="stock_card__user_avatar"></div>
+            </div>
+        </div>
+        <div class="stock_card">
+            <div class="stock_card__image"></div>
+            <div class="stock_card__content">
+                <div class="stock_card__text_wrapper">
+                    <div class="stock_card__title"><h3>Вещи дочки</h3></div>
+                    <div class="stock_card__id">A 242 01512</div>
+                </div>
+
+                <div class="stock_card__icon stock_card__icon_return"></div>
+            </div>
+        </div>
+        <div class="stock_card">
+            <div class="stock_card__image"></div>
+            <div class="stock_card__content">
+                <div class="stock_card__text_wrapper">
+                    <div class="stock_card__title"><h3>Вещи дочки</h3></div>
+                    <div class="stock_card__id">A 242 01512</div>
+                </div>
+
+                <div class="stock_card__icon stock_card__icon_return"></div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

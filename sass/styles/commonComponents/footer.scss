@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   position: relative;
   padding: 56px 0 42px 0;
@@ -6,6 +6,9 @@ footer {
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   max-width: 1280px;
   padding: 0 100px;
   position: relative;
@@ -13,7 +16,7 @@ footer {
 }
 
 .footer__column {
-  float: left;
+  width: 320px;
 }
 
 .footer__header {
@@ -32,16 +35,12 @@ footer {
   }
 }
 
-.footer__column_left {
-  margin-right: 196px;
-}
-
 .footer__column_center {
-  margin: 36px 165px 0 0;
+  align-self: flex-end;
+  margin-bottom: 14px;
 }
 
 .footer__column_right {
-
   img {
     display: block;
     float: left;
@@ -75,7 +74,7 @@ footer {
 }
 
 .footer__item_logo_block {
-  margin-top: 47px;
+  margin-top: 48px;
 }
 
 .footer__logo_wrapper {

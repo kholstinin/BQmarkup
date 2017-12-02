@@ -1,0 +1,111 @@
+.cards__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stock_card {
+  width: 332px;
+  height: 260px;
+  margin-bottom: 50px;
+}
+
+.stock_card__image {
+  width: 100%;
+  height: 190px;
+  border-radius: 4px;
+}
+
+.stock_card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.stock_card__text_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock_card__title {
+  margin-bottom: 10px;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.stock_card__title_active {
+  margin-bottom: 25px;
+  h3 {
+    line-height: 21px;
+    font-weight: bold;
+    color: #ee5133
+  }
+}
+
+.stock_card__address {
+  margin-bottom: 25px;
+}
+
+.stock_card__arrival_time {
+  margin-bottom: 25px;
+}
+
+.stock_card__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock_card__user_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.stock_card__user_info {
+
+}
+
+.stock_card__address_title {
+  color: #939598;
+  line-height: 18px;
+}
+
+.stock_card__arrival_time_title {
+  color: #939598;
+  line-height: 18px;
+}
+
+.stock_card__user_name {
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.stock_card__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.stock_card__icon_return {
+  background-color: #d9d9d9;
+}
+
+.stock_card__icon_done {
+  background-color: #ee5133;
+}
+
+.stock_card__id {
+  font-size: 13px;
+  color: #939598;
+}
+
+.stock_card__active_delivery {
+  border: 1px solid #DCDDDE;
+  border-radius: 3px;
+  padding: 26px 20px 20px 20px;
+}

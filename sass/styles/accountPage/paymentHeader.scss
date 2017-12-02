@@ -1,0 +1,52 @@
+.payment__header {
+  width: 100%;
+  height: 80px;
+  padding: 0 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 5px #d9d9d9;
+}
+
+.payment__header_row {
+  height: 30px;
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment__header_logo {
+  width: 40px;
+  height: 100%;
+  border: 1px solid #000;
+  margin-right: 94px;
+}
+
+.payment__header__steps_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.payment__header_step {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 160px;
+  height: 100%;
+  padding-left: 20px;
+  border-left: 1px solid #dcddde;
+}
+
+.payment__header_step_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 13px;
+  line-height: 13px;
+  color: #b1b3b6;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/accountStyles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__content">
+        <div class="header__logo"></div>
+        <div class="header__city">Москва</div>
+        <div class="header__phone_number">+7 (495) 120-2100</div>
+
+        <div class="header__username"><a href="#">Александр</a></div>
+        <div class="header__save_free"><a href="#">Как хранить бесплатно?</a></div>
+        <div class="header__download_app"><a href="#">Скачать приложение</a></div>
+    </div>
+</header>
+
+<main class="section_main stock">
+    <div class="sections__wrapper">
+        <div class="section">
+            <div class="section__title title_text">Добавление<br/> карты</div>
+            <div class="section__title_info">Здесь вы можете привязать данные кредитной карты, с которой будете
+                оплачивать доставку и ежемесячное хранение вещей.
+            </div>
+        </div>
+        <div class="section section__credit_card">
+            <div class="credit_card__wrapper">
+                <div class="credit_card">
+                    <div class="credit_card__title">Банк</div>
+                    <input class="input credit_card__number" placeholder="Номер карты">
+                    <div class="credit_card__validity_row">
+                        <div class="credit_card__validity_title">Срок<br/> действия</div>
+                        <div class="credit_card__validity_date"><input class="input" placeholder="02"></div>
+                        <div class="credit_card__validity_year"><input class="input" placeholder="2018"></div>
+                    </div>
+                    <input class="input credit_card__name" placeholder="Имя на карте">
+                </div>
+                <div class="credit_card credit_card__back_side">
+                    <div class="credit_card__line"></div>
+                    <div class="credit_card__cvv_row">
+                        <div class="credit_card__cvv">
+                            <input class="input credit_card__cvv_input" placeholder="CVV">
+                            <div class="credit_card__cvv_info">Что такое<br/> CVV код?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credit_card__buttons_wrapper">
+                <button type="button" class="btn btn__type_accent credit_card__save_button">Сохранить</button>
+                <a href="#" class="credit_card__cancel">Отмена</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

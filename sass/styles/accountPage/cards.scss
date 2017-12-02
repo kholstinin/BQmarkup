@@ -1,0 +1,39 @@
+.card_basic {
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #dcddde;
+}
+
+.card_basic__size_small {
+  width: 160px;
+  height: 160px;
+}
+
+
+.card_basic__size_medium {
+  width: 520px;
+  height: 120px;
+}
+
+.card_basic__status_active {
+  border-color: #ee5133;
+}
+
+.payment_card {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment_card__icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+.payment_card__text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #939598;
+}

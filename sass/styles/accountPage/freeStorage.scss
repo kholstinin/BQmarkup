@@ -1,0 +1,98 @@
+.free_storage__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
+
+.free_storage__title_text {
+  padding-top: 10px;
+  width: 492px;
+}
+
+.free_storage__card {
+  width: 520px;
+  height: 240px;
+  background-color: #fbc533;
+  border-radius: 4px;
+}
+
+.free_storage__card_info {
+  padding: 37px 0 0 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.free_storage__card_title {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.free_storage__card_value {
+  font-family: Geometria;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 80px;
+}
+
+.free_storage__card_currency {
+  font-size: 28px;
+}
+
+.free_storage__card_friends_number {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.free_storage__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.free_storage__info_text {
+  font-size: 17px;
+  line-height: 25px;
+  width: 490px;
+}
+
+.free_storage__invite_block {
+  width: 520px;
+}
+
+.invite_block__title {
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+.invite_block__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  margin-bottom: 40px;
+  border: 0;
+  padding: 0 50px;
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+}
+
+.invite_block__share_title {
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+.invite_block__share_icons_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.invite_block__share_icon {
+  background-color: #DCDDDE;
+  margin-right: 15px;
+}
+
+.invite_block__share_icon:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,43 @@
+.sections_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section {
+  width: 520px;
+}
+
+.section__title {
+  margin-bottom: 34px;
+}
+
+.section__title_info {
+  font-size: 19px;
+  line-height: 24px;
+  width: 500px;
+}
+
+.section_main {
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.section__payment {
+  padding: 40px 0 100px 0;
+}
+
+.section__payment_info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+}
+
+.section__list {
+  margin: 26px 0;
+}
+
+.section__list_text {
+  color: #939598;
+}

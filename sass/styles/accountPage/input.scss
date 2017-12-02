@@ -1,0 +1,29 @@
+.input {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Helvetica Neue', serif;
+  padding: 0 20px;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.input::-webkit-input-placeholder {
+  color: #939598;
+}
+
+.input::-moz-placeholder {
+  color: #939598;
+}
+
+/* Firefox 18- */
+.input:-ms-input-placeholder {
+  color: #939598;
+}
+
+/* Firefox 19+ */
+.input:-moz-placeholder {
+  color: #939598;
+}

@@ -1,0 +1,85 @@
+.time_form {
+  margin-bottom: 40px;
+}
+
+.calendar {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddfe1;
+  margin-bottom: 20px;
+}
+
+.calendar__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time_card {
+  padding: 26px 20px 0 20px;
+  margin-bottom: 20px;
+}
+
+.calendar__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 17px;
+  margin: 0 25px;
+}
+
+.calendar__arrow {
+  width: 8px;
+  height: 12px;
+  border: 1px solid #000;
+}
+
+.calendar__arrow:first-child {
+  margin-right: 25px;
+}
+
+.calendar__arrow:last-child {
+  margin-left: 25px;
+}
+
+.calendar__item__type_active {
+  font-weight: bold;
+}
+
+.calendar__item_text {
+  line-height: 15px;
+}
+
+.time_table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+//.time_table:after {
+//  content: "";
+//  flex: auto;
+//}
+
+.time_card__text {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.time_card__line {
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  margin: 12px 0;
+}
+
+.time_card__text__disabled {
+  color: #939598;
+}
+
+.time_card__line__disabled {
+  background-color: #939598;
+}

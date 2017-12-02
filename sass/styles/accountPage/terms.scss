@@ -1,0 +1,22 @@
+.terms__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 77px;
+  border-bottom: 1px solid $border-color;
+}
+
+.terms__location {
+  width: 232px;
+  text-align: right;
+  margin-top: 10px;
+  color: #939598;
+}
+
+.terms__content {
+  padding: 40px 0 0 372px;
+}
+
+.terms__text {
+  line-height: 25px;
+}

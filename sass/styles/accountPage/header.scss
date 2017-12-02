@@ -1,0 +1,58 @@
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 5px #d9d9d9;
+}
+
+.header__content {
+  width: 1280px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.header__username {
+  height: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  float: right;
+  padding-left: 19px;
+  border-left: 1px solid $header-border-color;
+}
+
+.header__save_free {
+  float: right;
+  margin-right: 19px;
+}
+
+.header__download_app {
+  float: right;
+  margin-right: 19px;
+}
+
+.header__logo {
+  width: 20px;
+  height: 100%;
+  float: left;
+  padding-right: 20px;
+  border-right: 1px solid $header-border-color;
+  margin-right: 20px;
+}
+
+.header__city {
+  color: #939598;
+  float: left;
+  margin-right: 20px;
+}
+
+.header__phone_number {
+  color: #939598;
+  float: left;
+}
+
+.content {
+  height: 500px;
+}

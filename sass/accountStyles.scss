@@ -1,0 +1,34 @@
+// Variables
+@import "styles/commonComponents/variables";
+@import "styles/commonComponents/functions";
+
+// Main styles
+@import "styles/commonComponents/main";
+
+// Components
+@import "styles/commonComponents/button";
+@import "styles/accountPage/cards";
+
+// Sections
+@import "styles/commonComponents/footer";
+
+// Account page styles
+@import "styles/accountPage/header";
+@import "styles/accountPage/main";
+@import "styles/accountPage/stockCard";
+@import "styles/accountPage/emptyStockCard";
+@import "styles/accountPage/lightbox";
+@import "styles/accountPage/freeStorage";
+@import "styles/accountPage/terms";
+@import "styles/accountPage/sections";
+@import "styles/accountPage/input";
+@import "styles/accountPage/creditCard";
+
+@import "styles/accountPage/payment";
+@import "styles/accountPage/paymentHeader";
+@import "styles/accountPage/departureForm";
+
+@import "styles/accountPage/paymentFooter";
+@import "styles/accountPage/boxes";
+@import "styles/accountPage/timePage";
+@import "styles/accountPage/endForm";

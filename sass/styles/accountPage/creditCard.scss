@@ -1,0 +1,110 @@
+.credit_card__wrapper {
+  position: relative;
+  width: 520px;
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+.credit_card {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: solid 1px #dcddde;
+  padding: 20px;
+  z-index: 2;
+}
+
+.credit_card__title {
+  font-size: 21px;
+  line-height: 21px;
+  color: #dcddde;
+  margin-bottom: 20px;
+}
+
+.credit_card__number {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.credit_card__name {
+  margin-top: 10px;
+}
+
+.credit_card__validity_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.credit_card__validity_title {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.credit_card__validity_date {
+  width: 90px;
+}
+
+.credit_card__validity_year {
+  width: 89px;
+  margin-left: 1px;
+}
+
+
+
+.credit_card__back_side {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-right: 0;
+}
+
+.credit_card__line {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #dcddde;
+}
+
+.credit_card__cvv_row {
+  float: right;
+  padding-right: 20px;
+}
+
+.credit_card__cvv {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit_card__cvv_input {
+  margin-top: 10px;
+}
+
+.credit_card__cvv_info {
+  font-size: 13px;
+  line-height: 18px;
+  color: #939598;
+  margin-top: 20px;
+}
+
+
+.credit_card__buttons_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.credit_card__save_button {
+  width: 260px;
+}
+
+.credit_card__cancel {
+  height: 50px;
+  line-height: 50px;
+  color: #ee5133;
+  margin-left: 20px;
+}

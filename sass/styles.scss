@@ -1,26 +1,27 @@
 // Variables
-@import "styles/variables";
-@import "styles/functions";
+@import "styles/commonComponents/variables";
+@import "styles/commonComponents/functions";
 
 // Main styles
-@import "styles/main";
+@import "styles/commonComponents/main";
+@import "styles/mainPage/mainStyles";
 
 // Components
-@import "styles/button";
-@import "styles/slider";
-@import "styles/input";
-@import "styles/lightbox";
-@import "styles/tooltip";
+@import "styles/commonComponents/button";
+@import "styles/commonComponents/slider";
+@import "styles/mainPage/input";
+@import "styles/mainPage/lightbox";
+@import "styles/commonComponents/tooltip";
+@import "styles/commonComponents/feedbackCard";
 
 // Sections
-@import "styles/header";
+@import "styles/mainPage/header";
 
-@import "styles/sectionOne";
-@import "styles/sectionTwo";
-@import "styles/sectionThree";
-@import "styles/sectionFour";
-@import "styles/sectionFive";
+@import "styles/mainPage/sectionOne";
+@import "styles/mainPage/sectionTwo";
+@import "styles/mainPage/sectionThree";
+@import "styles/mainPage/sectionFour";
+@import "styles/mainPage/sectionFive";
 
-@import "styles/footer";
-
-@import "styles/media";
+@import "styles/commonComponents/footer";
+@import "styles/mainPage/media";

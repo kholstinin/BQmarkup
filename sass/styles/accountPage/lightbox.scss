@@ -1,0 +1,92 @@
+.lightbox_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  display: none;
+}
+
+.lightbox {
+  width: 840px;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  margin-left: -420px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 501;
+  display: none;
+}
+
+.lightbox__image {
+  height: 480px;
+  border-bottom: 1px solid #000;
+}
+
+.lightbox__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lightbox__content_wrapper {
+  height: 320px;
+  padding: 50px 40px 0 40px;
+}
+
+.lightbox__close_button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.lightbox__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.lightbox__table {
+  display: table;
+  width: 360px;
+  border-collapse: collapse;
+}
+
+.lightbox__table_row {
+  display: table-row;
+  border-top: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
+}
+
+.lightbox__table_cell {
+  padding: 18px 0;
+  display: table-cell;
+}
+
+.lightbox__table_cell_title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.lightbox__table_cell_value {
+  text-align: right;
+}
+
+.lightbox__notes {
+  width: 360px;
+  border: none;
+  border-top: 1px solid #dcddde;
+  padding-top: 18px;
+  resize: none;
+  font-family: "Helvetica Neue";
+  font-size: 15px;
+}

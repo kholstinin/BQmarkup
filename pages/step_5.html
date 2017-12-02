@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <title>Account</title>
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/accountStyles.css">
+</head>
+<body>
+
+<header class="payment__header">
+    <div class="payment__header_row">
+        <div class="payment__header_logo"></div>
+        <div class="payment__header__steps_wrapper">
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Адрес</div>
+                    <div>доставки</div>
+                </div>
+            </div>
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Количество</div>
+                    <div>боксов</div>
+                </div>
+            </div>
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Крупные</div>
+                    <div>предметы</div>
+                </div>
+            </div>
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Дата</div>
+                    <div>и время</div>
+                </div>
+            </div>
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Платежная</div>
+                    <div>информация</div>
+                </div>
+            </div>
+            <div class="payment__header_step">
+                <div class="payment__header_step_text">
+                    <div>Завершение</div>
+                    <div>заказа</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="section_main section__payment">
+    <div class="section__payment_header">
+        <div class="section__payment_image"></div>
+    </div>
+    <div class="sections_wrapper">
+        <div class="section">
+            <div class="title_text section__payment_title">
+                Платежная информация
+            </div>
+            <div class="section__title_info">
+                Заполните данные банковской карты, с которой вы<br> будете оплачивать доставку и ежемесячное хранение<br> вещей
+            </div>
+            <div class="section__payment_info">
+                <div class="payment_card">
+                    <div class="payment_card__icon"></div>
+                    <div class="payment_card__text">Без платежей вперед.<br> Только за текущий месяц</div>
+                </div>
+                <div class="payment_card">
+                    <div class="payment_card__icon"></div>
+                    <div class="payment_card__text">Без оплаты<br> наличными курьеру</div>
+                </div>
+                <div class="payment_card">
+                    <div class="payment_card__icon"></div>
+                    <div class="payment_card__text">Безопасные платежи<br> с 3-D Secure и PCI DSS</div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="credit_card__wrapper">
+                <div class="credit_card">
+                    <div class="credit_card__title">Банк</div>
+                    <input class="input credit_card__number" placeholder="Номер карты">
+                    <div class="credit_card__validity_row">
+                        <div class="credit_card__validity_title">Срок<br/> действия</div>
+                        <div class="credit_card__validity_date"><input class="input" placeholder="02"></div>
+                        <div class="credit_card__validity_year"><input class="input" placeholder="2018"></div>
+                    </div>
+                    <input class="input credit_card__name" placeholder="Имя на карте">
+                </div>
+                <div class="credit_card credit_card__back_side">
+                    <div class="credit_card__line"></div>
+                    <div class="credit_card__cvv_row">
+                        <div class="credit_card__cvv">
+                            <input class="input credit_card__cvv_input" placeholder="CVV">
+                            <div class="credit_card__cvv_info">Что такое<br/> CVV код?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn__type_accent btn__size_big next_btn">Далее</div>
+        </div>
+    </div>
+</main>
+
+<footer class="payment_footer">
+    <div class="payment_footer__row">
+        <div class="payment_footer__title">Звоните и пишите, мы поможем!</div>
+        <div class="payment_footer__right_wrapper">
+            <div class="payment_footer__phone_number">+7 (495) 120-2100</div>
+            <div class="payment__footer_socials">
+                <div class="payment_footer__social_icon"></div>
+                <div class="payment_footer__social_icon"></div>
+                <div class="payment_footer__social_icon"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

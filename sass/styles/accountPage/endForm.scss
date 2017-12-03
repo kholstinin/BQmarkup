@@ -2,6 +2,12 @@
 
 }
 
+.end_form__table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .end_form__title {
   line-height: 15px;
   margin-bottom: 16px;
@@ -10,5 +16,67 @@
 
 .end_form__row {
   display: table-row;
+  width: 100%;
   height: 80px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.end_form__cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.end_form__cell_icon {
+  margin-right: 38px;
+  width: 55px;
+}
+
+.end_form__cell_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.end_form__cell_value {
+  text-align: right;
+}
+
+.order_info__title {
+  margin-top: 48px;
+  line-height: 15px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.order_info__text {
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.order_info__payment_row {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+.order_info__payment_card_image {
+  width: 60px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+
+.order_info__payment_card_value {
+  line-height: 23px;
+}
+
+.order_info__terms_of_use {
+  font-size: 13px;
+  line-height: 19px;
+  color: #939598;
 }

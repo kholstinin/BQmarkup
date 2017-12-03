@@ -1,0 +1,46 @@
+.profile_settings {
+  margin-bottom: 40px;
+}
+
+.profile_settings__input {
+  margin-bottom: 20px;
+}
+
+.profile_settings__fullname_input_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_settings__input_name {
+  width: 259px;
+}
+
+.profile_settings__input_surname {
+  width: 260px;
+  margin-left: 1px;
+}
+
+.profile_settings__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  color: #939598;
+  padding-left: 21px;
+  border-left: 1px solid #d1d3d4;
+}
+
+
+.settings__block_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 37px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d1d3d4;
+}
+
+.settings__block_title_text {
+  font-size: 20px;
+  font-weight: bold;
+}

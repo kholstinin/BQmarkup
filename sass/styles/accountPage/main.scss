@@ -60,3 +60,23 @@
 .next_btn {
   margin-top: 20px;
 }
+
+.accent_text {
+  color: $text-accent;
+}
+
+.save_buttons_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.save_button {
+  width: 260px;
+}
+
+.cancel_button {
+  height: 50px;
+  line-height: 50px;
+  color: #ee5133;
+  margin-left: 20px;
+}

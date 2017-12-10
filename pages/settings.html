@@ -9,12 +9,11 @@
 
 <header class="header">
     <div class="header__content">
-        <div class="header__logo"></div>
+        <div class="header__logo"><a href="./stock.html"><img src="../img/logo_down.svg"></a></div>
         <div class="header__city">Москва</div>
         <div class="header__phone_number">+7 (495) 120-2100</div>
-
-        <div class="header__username"><a href="#">Александр</a></div>
-        <div class="header__save_free"><a href="#">Как хранить бесплатно?</a></div>
+        <div class="header__username"><a href="./settings.html">Александр</a></div>
+        <div class="header__save_free"><a href="./freeStorage.html">Как хранить бесплатно?</a></div>
         <div class="header__download_app"><a href="#">Скачать приложение</a></div>
     </div>
 </header>
@@ -27,15 +26,98 @@
         </div>
         <div class="section">
             <div class="settings">
-                <div class="settings__block">
-                    <div class="settings__block_title settings__block_title__with_buttons">
-                        <div class="settings__block_title_text">Профиль</div>
-                        <div class="settings__block_title_btns_wrapper">
-                            <div class="settings__block_title_btn">Редактировать</div>
-                            <div class="settings__block_title_btn">Выйти</div>
+                <div class="settings_table settings__block">
+                    <div class="settings_table__content">
+
+                        <div class="settings_table__block">
+                            <div class="settings_table_title settings__block_title__with_buttons">
+                                <div class="settings_table_title_text">Профиль</div>
+                                <div class="settings_table_title_btns_wrapper">
+                                    <div class="settings_table_title_btn">Редактировать</div>
+                                    <div class="settings_table_title_divider"></div>
+                                    <div class="settings_table_title_btn">Выйти</div>
+                                </div>
+                            </div>
+                            <div class="settings_table__cell">
+                                <div class="settings_table__cell_title">Имя и фамилия</div>
+                                <div class="settings_table__cell_text settings_table__username">Александр Кириллов</div>
+                            </div>
+                            <div class="settings_table__cell">
+                                <div class="settings_table__cell_title">E-mail</div>
+                                <div class="settings_table__cell_text settings_table__email">inteldoter@gmail.com</div>
+                            </div>
+                            <div class="settings_table__cell">
+                                <div class="settings_table__cell_title">Телефон</div>
+                                <div class="settings_table__cell_text settings_table__username settings_table__phonenumber">
+                                    +7 963 271 06 51
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="settings__block_content">
+
+                        <div class="settings_table__block">
+                            <div class="settings_table_title settings__block_title__with_buttons">
+                                <div class="settings_table_title_text">Оплата услуг</div>
+                            </div>
+                            <div class="settings_table__row">
+                                <div class="settings_table__row_content">
+                                    <div class="settings_table__paycard"><img class="settings_table__paycard_image"
+                                                                              src="../img/credit_card.svg"></div>
+                                    <div class="settings_table__row_column">
+                                        <div class="settings_table__cell_title settings_table__bank_name">Альфа Банк
+                                        </div>
+                                        <div class="settings_table__cell_text settings_table__paycard_number">
+                                            4554 54** **** 5450
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="settings_table__action_btn">Изменить</div>
+                            </div>
+                        </div>
+
+                        <div class="settings_table__block">
+                            <div class="settings_table_title settings__block_title__with_buttons">
+                                <div class="settings_table_title_text">Акции</div>
+                            </div>
+                            <div class="settings_table__row">
+                                <div class="settings_table__input_wrapper"><input class="settings_table__input input"
+                                                                                  placeholder="Промо-код"></div>
+                                <div class="settings_table__action_btn">Применить</div>
+                            </div>
+                        </div>
+
+                        <div class="settings_table__block">
+                            <div class="settings_table_title settings__block_title__with_buttons">
+                                <div class="settings_table_title_text">Документы</div>
+                            </div>
+                            <div class="settings_table__row">
+                                <div class="settings_table__row_content">
+                                    <img class="settings_table__pdf_icon" src="../img/pdf.svg">
+                                    <div class="settings_table__row_column">
+                                        <div class="settings_table__cell_title settings_table__report_title">
+                                            Отчёт об оплате на 15 марта 2017
+                                        </div>
+                                        <div class="settings_table__cell_text settings_table__report_amount">
+                                            Сумма: 750 руб.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="settings_table__action_btn">Изменить</div>
+                            </div>
+                            <div class="settings_table__row">
+                                <div class="settings_table__row_content">
+                                    <img class="settings_table__pdf_icon" src="../img/pdf.svg">
+                                    <div class="settings_table__row_column">
+                                        <div class="settings_table__cell_title settings_table__report_title">
+                                            Отчёт об оплате на 15 марта 2017
+                                        </div>
+                                        <div class="settings_table__cell_text settings_table__report_amount">
+                                            Сумма: 750 руб.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="settings_table__action_btn">Изменить</div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

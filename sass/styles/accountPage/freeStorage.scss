@@ -67,15 +67,22 @@
 
 .invite_block__link {
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   height: 50px;
+  padding-left: 13px;
   background-color: #f1f1f1;
   margin-bottom: 40px;
   border: 0;
-  padding: 0 50px;
   font-size: 17px;
   font-family: "Helvetica Neue";
+}
+
+.invite_block__link_icon {
+  width: 24px;
+  height: 10px;
+  margin-right: 13px;
 }
 
 .invite_block__share_title {
@@ -91,6 +98,47 @@
 .invite_block__share_icon {
   background-color: #DCDDDE;
   margin-right: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.share_icon_fb {
+  background-color: #4e6ba1;
+
+  img {
+    width: 10px;
+    height: 20px;
+  }
+}
+
+.share_icon_vk {
+  background-color: #45668e;
+
+  img {
+    width: 24px;
+    height: 14px;
+  }
+}
+
+.share_icon_tr {
+  background-color: #54aced;
+
+  img {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+.share_icon_whap {
+  background-color: #34a050;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .invite_block__share_icon:last-child {

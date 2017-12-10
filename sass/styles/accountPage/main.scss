@@ -17,6 +17,28 @@
 .stock__btn_plane_delivery {
   margin-left: 42px;
   width: 332px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+}
+
+.button__notifications {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d02c0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__icon {
+  width: 30px;
+  height: 18px;
 }
 
 .stock__header {
@@ -38,9 +60,7 @@
   background-color: #e6e7e8;
   color: #5d5d5d;
   font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
 
 .icon {

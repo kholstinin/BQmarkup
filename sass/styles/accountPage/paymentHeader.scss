@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 5px #d9d9d9;
+  position: relative;
 }
 
 .payment__header_row {
@@ -21,7 +22,6 @@
 .payment__header_logo {
   width: 40px;
   height: 100%;
-  border: 1px solid #000;
   margin-right: 94px;
 }
 
@@ -49,4 +49,12 @@
   font-size: 13px;
   line-height: 13px;
   color: #b1b3b6;
+}
+
+.payment__header_progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 160px;
 }

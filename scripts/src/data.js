@@ -1,4 +1,4 @@
-var prices = {
+const price = {
   "1": {
     "1": 350,
     "3": 300,
@@ -90,3 +90,5 @@ var prices = {
     "12": 125
   }
 };
+
+export default price;

@@ -31,7 +31,7 @@
 }
 
 
-.settings__block_title {
+.settings_table_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,7 +40,101 @@
   border-bottom: 1px solid #d1d3d4;
 }
 
-.settings__block_title_text {
+.settings_table_title_text {
   font-size: 20px;
   font-weight: bold;
+}
+
+.settings_table_title_btns_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.settings_table_title_btn {
+  color: #ee5133;
+}
+
+.settings_table_title_divider {
+  width: 1px;
+  height: 100%;
+  margin: 0 20px;
+  background-color: #d1d3d4;
+}
+
+.settings_table__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.settings_table__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.settings_table__row_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.settings_table__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.settings_table__row_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.settings_table__cell_title {
+  font-weight: bold;
+}
+
+.settings_table__block {
+  padding-bottom: 50px;
+}
+
+.settings_table__paycard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d1d3d4;
+  border-radius: 4px;
+  width: 80px;
+  height: 50px;
+}
+
+.settings_table__paycard_image {
+  width: 40px;
+  height: 26px;
+}
+
+.settings_table__action_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $text-accent;
+}
+
+.settings_table__input_wrapper {
+  width: 420px;
+}
+
+.settings_table__pdf_icon {
+  width: 40px;
+  height: 50px;
 }

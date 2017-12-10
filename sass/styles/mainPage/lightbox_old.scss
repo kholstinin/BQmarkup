@@ -1,0 +1,71 @@
+.lightbox_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+  display: none;
+}
+
+.lightbox {
+  width: 650px;
+  height: 412px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -206px;
+  margin-left: -325px;
+  padding: 44px 0 97px 0;
+  text-align: center;
+  background-color: #fff;
+  z-index: 501;
+  display: none;
+}
+
+.lightbox__title {
+  font-size: 40px;
+  font-family: "Geometria";
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.lightbox__article {
+  font-size: 15px;
+  color: #899398;
+  margin-bottom: 25px;
+}
+
+.lightbox__input-wrapper {
+  position: relative;
+  width: 347px;
+  margin: 25px auto;
+}
+
+.lightbox__done_icon {
+  display: none;
+  position: absolute;
+  width: 18px;
+  height: 12px;
+  right: 15px;
+  top: 19px;
+}
+
+.lightbox__input {
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+
+.lightbox__btn {
+  margin: 0 auto;
+}
+
+.lightbox__close-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}

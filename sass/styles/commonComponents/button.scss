@@ -33,6 +33,14 @@
   width: 200px;
 }
 
+.btn__size_smallest {
+  width: 170px;
+}
+
 .btn__type_accent {
   background-color: $accent-color-btn;
+}
+
+.btn__status_error {
+  background-color: #cc290a;
 }

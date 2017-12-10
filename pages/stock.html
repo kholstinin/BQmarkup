@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>stock</title>
-    <script src="../scripts/jquery-3.2.1.min.js"></script>
-    <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/accountStyles.css">
 </head>
 <body>
 
 <header class="header">
     <div class="header__content">
-        <div class="header__logo"></div>
+        <div class="header__logo"><a href="./stock.html"><img src="../img/logo_down.svg"></a></div>
         <div class="header__city">Москва</div>
         <div class="header__phone_number">+7 (495) 120-2100</div>
-
-        <div class="header__username"><a href="#">Александр</a></div>
-        <div class="header__save_free"><a href="#">Как хранить бесплатно?</a></div>
+        <div class="header__username"><a href="./settings.html">Александр</a></div>
+        <div class="header__save_free"><a href="./freeStorage.html">Как хранить бесплатно?</a></div>
         <div class="header__download_app"><a href="#">Скачать приложение</a></div>
     </div>
 </header>
@@ -65,9 +62,13 @@
         </div>
         <div class="stock__header_buttons_wrapper">
             <div class="stock__plus_wrapper">
-                <div class="stock__plus"></div>
+                <img src="../img/add.svg" class="stock__plus">
             </div>
-            <button type="button" class="btn btn__type_accent stock__btn_plane_delivery">Запланировать доставку</button>
+            <div class="btn btn__type_accent stock__btn_plane_delivery">
+                <img src="../img/car.svg" class="button__icon">
+                Запланировать доставку
+                <div class="button__notifications">1</div>
+            </div>
         </div>
     </div>
 
@@ -116,5 +117,43 @@
     </div>
 </main>
 
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__column">
+            <div class="footer__header">Мобильный склад</div>
+            <div class="footer__item"><a href="#">О сервисе</a></div>
+            <div class="footer__item"><a href="#">Правила хранения</a></div>
+            <div class="footer__item"><a href="#">Как хранить бесплатно?</a></div>
+            <div class="footer__item_logo_block">
+                <div class="footer__logo_wrapper"><a href="#"><img src="../img/logo_down.svg"/></a></div>
+                <h6 class="footer__logo_text">2017 QB. Москва</h6></div>
+        </div>
+
+        <div class="footer__column footer__column_center">
+            <div class="footer__item"><a href="#">Вопросы и ответы</a></div>
+            <div class="footer__item"><a href="#">Пользовательское соглашение</a></div>
+            <div class="footer__item"><a href="#">Политика конфиденциальности</a></div>
+            <div class="footer__item footer__item_bottom">
+                <img src="../img/app.svg"><span class="footer__item_bottom_text"><a
+                    href="#">Скачать приложение</a></span>
+            </div>
+            <div class="footer__mobile-logo">
+                <h6>2017 QB. Москва</h6>
+            </div>
+        </div>
+
+        <div class="footer__column footer__column_right">
+            <div class="footer__header">Связаться с нами</div>
+            <div class="footer__item">+7 (495) 120-2100</div>
+            <div class="footer__item">support@qb.com</div>
+            <div class="footer__item footer__item_icon"><img src="../img/messenger.svg"/><span
+                    class="footer__right_column_text">Messenger</span></div>
+            <div class="footer__item footer__item_icon"><img src="../img/telegram.svg"/><span
+                    class="footer__right_column_text">Telegram</span></div>
+            <div class="footer__item footer__item_icon"><img src="../img/whatsapp.svg"/><span
+                    class="footer__right_column_text">WhatsApp</span></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

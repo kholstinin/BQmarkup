@@ -10,13 +10,13 @@
   position: relative;
 }
 
-.payment__header_row {
-  height: 30px;
-  width: 1280px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  .payment__header_row {
+    height: 30px;
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .payment__header_logo {

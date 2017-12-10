@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/accountStyles.css">
+    <script src="dist/account.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 </head>
 <body>
 
@@ -13,7 +15,7 @@
         <div class="header__city">Москва</div>
         <div class="header__phone_number">+7 (495) 120-2100</div>
 
-        <div class="header__username"><a href="settings.html">Александр</a></div>
+        <div class="header__username"><a href="settings.html">Профиль</a></div>
         <div class="header__save_free"><a href="./freeStorage.html">Как хранить бесплатно?</a></div>
         <div class="header__download_app"><a href="#">Скачать приложение</a></div>
     </div>
@@ -25,8 +27,10 @@
         <div class="free_storage__card">
             <div class="free_storage__card_info">
                 <div class="free_storage__card_title">Заработано:</div>
-                <div class="free_storage__card_value">750 <span class="free_storage__card_currency">₽</span></div>
-                <div class="free_storage__card_friends_number">Пришло: 3 друзей</div>
+                <div class="free_storage__card_value"><span class="free_storage__value">0</span> <span
+                        class="free_storage__card_currency">₽</span></div>
+                <div class="free_storage__card_friends_number">Пришло: <span class="free_storage__friends_number">0</span> друзей
+                </div>
             </div>
         </div>
     </div>
@@ -37,7 +41,10 @@
         </div>
         <div class="free_storage__invite_block invite_block">
             <div class="invite_block__title">Отправьте ссылку для приглашения</div>
-            <div class="invite_block__link"><img class="invite_block__link_icon" src="img/link.svg">http://invite.qb.com/65829973_48630748</div>
+            <div class="invite_block__link"><img class="invite_block__link_icon" src="img/link.svg"><span
+                    class="invite_block__link_text"
+                    data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"></span>
+            </div>
             <div class="invite_block__share_title">или поделитесь в социальных сетях</div>
             <div class="invite_block__share_icons_wrapper">
                 <div class="icon invite_block__share_icon share_icon_fb"><img src="img/fb_white.svg"></div>

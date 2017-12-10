@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>stock</title>
     <link rel="stylesheet" type="text/css" href="css/accountStyles.css">
+    <script src="dist/account.bundle.js"></script>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
         <div class="header__logo"><a href="./stock.html"><img src="img/logo_down.svg"></a></div>
         <div class="header__city">Москва</div>
         <div class="header__phone_number">+7 (495) 120-2100</div>
-        <div class="header__username"><a href="./settings.html">Александр</a></div>
+        <div class="header__username"><a href="./settings.html">Профиль</a></div>
         <div class="header__save_free"><a href="./freeStorage.html">Как хранить бесплатно?</a></div>
         <div class="header__download_app"><a href="#">Скачать приложение</a></div>
     </div>
@@ -21,35 +22,7 @@
 <div class="lightbox_overlay"></div>
 <div class="lightbox">
     <div class="lightbox__close_button"></div>
-    <div class="lightbox__image">
-
-    </div>
-    <div class="lightbox__content_wrapper">
-        <div class="lightbox__title">Книги Жанны</div>
-        <div class="lightbox__content">
-            <div class="lightbox__table">
-                <div class="lightbox__table_row">
-                    <div class="lightbox__table_cell lightbox__table_cell_title">
-                        Номер бокса:
-                    </div>
-                    <div class="lightbox__table_cell lightbox__table_cell_value">
-                        А 101 3421
-                    </div>
-                </div>
-
-                <div class="lightbox__table_row">
-                    <div class="lightbox__table_cell lightbox__table_cell_title">
-                        Начало аренды:
-                    </div>
-                    <div class="lightbox__table_cell lightbox__table_cell_value">
-                        А 101 3421
-                    </div>
-                </div>
-            </div>
-
-            <textarea class="lightbox__notes" placeholder="Добавить заметку"></textarea>
-        </div>
-    </div>
+    <div class="lightbox__content_wrapper"></div>
 </div>
 
 <main class="section_main stock">
@@ -58,61 +31,35 @@
             <div class="title_text stock__header">
                 Мой склад
             </div>
-            <div class="stock__header_commentary">На складе хранится 4 бокса</div>
+            <div class="stock__header_commentary">Ваш склад пока что пуст</div>
         </div>
         <div class="stock__header_buttons_wrapper">
             <div class="stock__plus_wrapper">
-                <img src="img/add.svg" class="stock__plus">
+                <a href="./steps.html"><img src="img/add.svg" class="stock__plus"></a>
             </div>
-            <div class="btn btn__type_accent stock__btn_plane_delivery">
-                <img src="img/car.svg" class="button__icon">
-                Запланировать доставку
-                <div class="button__notifications">1</div>
-            </div>
+            <a href="./steps.html">
+                <div class="btn btn__type_accent stock__btn_plane_delivery">
+                    <img src="img/car.svg" class="button__icon">
+                    Запланировать доставку
+                    <div class="button__notifications">0</div>
+                </div>
+            </a>
         </div>
     </div>
-
+    <div class="card_empty_stock">
+        <div class="card_empty_stock__image">
+            <img src="img/boxes.jpg">
+        </div>
+        <div class="card_empty_stock__text_wrapper">
+            <div class="card_empty_stock__text_header"><h3>Запланируйте встречу, остальное сделает команда QB!</h3>
+            </div>
+            <div class="card_empty_stock__text">Мы привезем вам боксы, поможем упаковать вещи и бережно доставим их на
+                склад.
+            </div>
+            <button type="button" class="btn btn__type_accent card_empty_stock__btn">Запланировать встречу</button>
+        </div>
+    </div>
     <div class="cards__wrapper">
-        <div class="stock_card stock_card__active_delivery">
-            <div class="stock_card__title_active"><h3>Активная доставка</h3></div>
-            <div class="stock_card__address">
-                <div class="stock_card__address_title">Команда QB выехала по адресу:</div>
-                <div class="stock_card__address_value">ул. Ивана Бабушкина 32</div>
-            </div>
-            <div class="stock_card__arrival_time">
-                <div class="stock_card__arrival_time_title">Примерное время прибытия:</div>
-                <div class="stock_card__arrival_time_value">10 минут...</div>
-            </div>
-            <div class="stock_card__user">
-                <div class="stock_card__user_info">
-                    <div class="stock_card__user_name">Алексей</div>
-                    <div class="stock_card__phone_number">+7 (915) 085-8580</div>
-                </div>
-                <div class="stock_card__user_avatar"></div>
-            </div>
-        </div>
-        <div class="stock_card">
-            <div class="stock_card__image"></div>
-            <div class="stock_card__content">
-                <div class="stock_card__text_wrapper">
-                    <div class="stock_card__title"><h3>Вещи дочки</h3></div>
-                    <div class="stock_card__id">A 242 01512</div>
-                </div>
-
-                <div class="stock_card__icon stock_card__icon_return"></div>
-            </div>
-        </div>
-        <div class="stock_card">
-            <div class="stock_card__image"></div>
-            <div class="stock_card__content">
-                <div class="stock_card__text_wrapper">
-                    <div class="stock_card__title"><h3>Вещи дочки</h3></div>
-                    <div class="stock_card__id">A 242 01512</div>
-                </div>
-
-                <div class="stock_card__icon stock_card__icon_return"></div>
-            </div>
-        </div>
 
     </div>
 </main>
@@ -131,7 +78,7 @@
 
         <div class="footer__column footer__column_center">
             <div class="footer__item"><a href="#">Вопросы и ответы</a></div>
-            <div class="footer__item"><a href="#">Пользовательское соглашение</a></div>
+            <div class="footer__item"><a href="./termsOfUse.html">Пользовательское соглашение</a></div>
             <div class="footer__item"><a href="#">Политика конфиденциальности</a></div>
             <div class="footer__item footer__item_bottom">
                 <img src="img/app.svg"><span class="footer__item_bottom_text"><a

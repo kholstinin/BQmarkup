@@ -1385,3 +1385,6 @@ h3 {
 .settings_table__pdf_icon {
   width: 40px;
   height: 50px; }
+
+.settings_table__empty_block {
+  margin-top: 20px; }

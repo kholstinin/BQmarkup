@@ -7,7 +7,7 @@ export default function registryTemplate(phoneNumber) {
                  а вы получите доступ в личный кабинет.
              </div>
              <div class=\"lightbox__btns_wrapper\">
-                 <input class=\"custom_input lightbox__input\" placeholder=\"0000\">
-                 <button type=\"button\" class=\"btn lightbox__btn btn__size_smallest btn__type_accent\">Подтвердить</button>
+                 <input class=\"custom_input lightbox__input\" placeholder=\"000000\">
+                 <button type=\"button\" class=\"btn lightbox__btn btn__size_smallest btn__type_accent lightbox__btn_confirm\">Подтвердить</button>
              </div>`;
 };

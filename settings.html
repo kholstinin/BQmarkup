@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/accountStyles.css">
+    <script src="dist/account.bundle.js"></script>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
         <div class="header__logo"><a href="stock.html"><img src="img/logo_down.svg"></a></div>
         <div class="header__city">Москва</div>
         <div class="header__phone_number">+7 (495) 120-2100</div>
-        <div class="header__username"><a href="./settings.html">Александр</a></div>
+        <div class="header__username"><a href="./settings.html">Профиль</a></div>
         <div class="header__save_free"><a href="./freeStorage.html">Как хранить бесплатно?</a></div>
         <div class="header__download_app"><a href="#">Скачать приложение</a></div>
     </div>
@@ -33,23 +34,23 @@
                             <div class="settings_table_title settings__block_title__with_buttons">
                                 <div class="settings_table_title_text">Профиль</div>
                                 <div class="settings_table_title_btns_wrapper">
-                                    <div class="settings_table_title_btn">Редактировать</div>
+                                    <div class="settings_table_title_btn"><a href="./profile_settings.html">Редактировать</a></div>
                                     <div class="settings_table_title_divider"></div>
                                     <div class="settings_table_title_btn">Выйти</div>
                                 </div>
                             </div>
                             <div class="settings_table__cell">
                                 <div class="settings_table__cell_title">Имя и фамилия</div>
-                                <div class="settings_table__cell_text settings_table__username">Александр Кириллов</div>
+                                <div class="settings_table__cell_text settings_table__username">Не указано</div>
                             </div>
                             <div class="settings_table__cell">
                                 <div class="settings_table__cell_title">E-mail</div>
-                                <div class="settings_table__cell_text settings_table__email">inteldoter@gmail.com</div>
+                                <div class="settings_table__cell_text settings_table__email">Не указан</div>
                             </div>
                             <div class="settings_table__cell">
                                 <div class="settings_table__cell_title">Телефон</div>
-                                <div class="settings_table__cell_text settings_table__username settings_table__phonenumber">
-                                    +7 963 271 06 51
+                                <div class="settings_table__cell_text settings_table__phonenumber">
+                                    Не указан
                                 </div>
                             </div>
                         </div>
@@ -89,33 +90,8 @@
                             <div class="settings_table_title settings__block_title__with_buttons">
                                 <div class="settings_table_title_text">Документы</div>
                             </div>
-                            <div class="settings_table__row">
-                                <div class="settings_table__row_content">
-                                    <img class="settings_table__pdf_icon" src="img/pdf.svg">
-                                    <div class="settings_table__row_column">
-                                        <div class="settings_table__cell_title settings_table__report_title">
-                                            Отчёт об оплате на 15 марта 2017
-                                        </div>
-                                        <div class="settings_table__cell_text settings_table__report_amount">
-                                            Сумма: 750 руб.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="settings_table__action_btn">Изменить</div>
-                            </div>
-                            <div class="settings_table__row">
-                                <div class="settings_table__row_content">
-                                    <img class="settings_table__pdf_icon" src="img/pdf.svg">
-                                    <div class="settings_table__row_column">
-                                        <div class="settings_table__cell_title settings_table__report_title">
-                                            Отчёт об оплате на 15 марта 2017
-                                        </div>
-                                        <div class="settings_table__cell_text settings_table__report_amount">
-                                            Сумма: 750 руб.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="settings_table__action_btn">Изменить</div>
+                            <div class="settings_table__documents">
+                                <div class="settings_table__empty_block">Документов пока нет.</div>
                             </div>
                         </div>
 

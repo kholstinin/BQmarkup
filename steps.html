@@ -6,12 +6,13 @@
     <title>Account</title>
 
     <link rel="stylesheet" type="text/css" href="css/accountStyles.css">
+    <script src="dist/order.bundle.js"></script>
 </head>
 <body>
 
 <header class="payment__header">
     <div class="payment__header_row">
-        <div class="payment__header_logo"></div>
+        <div class="payment__header_logo"><img src="img/logo_down.svg"></div>
         <div class="payment__header__steps_wrapper">
             <div class="payment__header_step">
                 <div class="payment__header_step_text">
@@ -51,6 +52,7 @@
             </div>
         </div>
     </div>
+    <div class="payment__header_progress"></div>
 </header>
 
 <main class="section_main section__payment">
@@ -60,73 +62,28 @@
     <div class="sections_wrapper">
         <div class="section">
             <div class="title_text section__payment_title">
-                Сколько боксов вам привезти?
+                Откуда забрать вещи?
             </div>
             <div class="section__title_info">
-                Наш курьер привезет вам комплект пустых боксов
-                для хранения и заберет их на склад на следующий день.
-                Вы заплатите только за те боксы, которые используете.
+                Введите ваш адрес.<br/>
+                Наши курьеры заберут вещи в удобное время.
             </div>
         </div>
-        <div class="section">
-            <div class="box_card__wrapper">
-
-                <div class="card_basic card_basic__size_small box_card card_basic__status_active">
-                    <div class="box_card__title">
-                        1 – 4<br>
-                        бокса
-                    </div>
-                    <div class="box_card__info">
-                        от 250 руб. / бокс<br>
-                        в месяц
-                    </div>
-                </div>
-
-                <div class="card_basic card_basic__size_small box_card">
-                    <div class="box_card__title">
-                        5 – 8<br>
-                        бокса
-                    </div>
-                    <div class="box_card__info">
-                        от 250 руб. / бокс<br>
-                        в месяц
-                    </div>
-                </div>
-
-                <div class="card_basic card_basic__size_small box_card">
-                    <div class="box_card__title">
-                        9 – 12<br>
-                        бокса
-                    </div>
-                    <div class="box_card__info">
-                        от 250 руб. / бокс<br>
-                        в месяц
-                    </div>
-                </div>
-
-                <div class="card_basic card_basic__size_small box_card">
-                    <div class="box_card__title">
-                        13 – 16<br>
-                        бокса
-                    </div>
-                    <div class="box_card__info">
-                        от 250 руб. / бокс<br>
-                        в месяц
-                    </div>
-                </div>
-
-                <div class="card_basic card_basic__size_small box_card">
-                    <div class="box_card__title">
-                        17 – 20<br>
-                        бокса
-                    </div>
-                    <div class="box_card__info">
-                        от 250 руб. / бокс<br>
-                        в месяц
-                    </div>
-                </div>
+        <div class="section section__departure_form">
+            <div class="departure_form"></div>
+            <div class="departure_form__place"><input class="input" placeholder="Улица, дом, корпус, строение"></div>
+            <div class="departure_form__row">
+                <div class="departure_form__entrance"><input class="input" placeholder="Подъезд"></div>
+                <div class="departure_form__floor"><input class="input" placeholder="Этаж"></div>
+                <div class="departure_form__apartment"><input class="input" placeholder="Квартира"></div>
             </div>
-                <div class="btn btn__type_accent btn__size_big box_cards__btn">Далее</div>
+            <div class="departure_form__name"><input class="input" placeholder="Ваше имя"></div>
+            <div class="departure_form__commentary">
+                <textarea class="departure_form__commentary_area" placeholder="Комментарии"></textarea>
+            </div>
+            <div class="departure_form__button">
+                <button class="btn btn__type_accent btn__size_big">Далее</button>
+            </div>
         </div>
     </div>
 </main>

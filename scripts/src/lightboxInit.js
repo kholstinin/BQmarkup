@@ -2,8 +2,6 @@ import firstEnterTemplate from "./lightbox_templates/login";
 import registryTemplate from "./lightbox_templates/registry";
 import confirmTemplate from "./lightbox_templates/confirm";
 
-import 'whatwg-fetch';
-
 export default function initLightbox() {
   const lightboxWrapper = $(".lightbox_overlay");
   const lightbox = $(".lightbox");
